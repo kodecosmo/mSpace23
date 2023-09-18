@@ -1,4 +1,3 @@
-
 import Header from '@/components/molecules/HeaderMolecule'
 import NavbarMolecule from '@/components/molecules/NavbarMolecule'
 import IntroMolecule from '@/components/molecules/IntroMolecule'
@@ -11,7 +10,7 @@ export default function Home() {
 
       <Header title="StudyMate" description="Welcome to StudyMate. Your online tutoring site."/>      
 
-      <NavbarMolecule />
+      <NavbarMolecule type="default" /> {/* `default` or `dashboard` */}
       
       <main style={{ marginTop: '80px' }} className='w-full'>
         
