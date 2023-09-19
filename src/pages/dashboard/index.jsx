@@ -4,7 +4,26 @@ import IntroMolecule from '@/components/molecules/IntroMolecule'
 import FooterMolecule from '@/components/molecules/FooterMolecule'
 import SideNavbarMolecule from '@/components/molecules/SideNavbarMolecule'
 
+import { useState, useEffect } from 'react';
+
 export default function Dashboard() {
+
+  const [windowHeight, setWindowHeight] = useState(0);
+
+  useEffect(() => {
+
+    const handleWindowResize = () => {
+      setWindowHeight(window.innerHeight);
+    };
+
+    window.addEventListener("load", handleWindowResize);
+
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  });
 
   return (
     <>
@@ -17,7 +36,7 @@ export default function Dashboard() {
 
         <div className='max-w-screen-xl flex w-full'>
 
-          <SideNavbarMolecule />
+          <SideNavbarMolecule windowHeight={windowHeight} />
 
           <div className="container">
             kenura<br />
