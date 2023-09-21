@@ -10,7 +10,7 @@ import Teacher from "../../components/molecules/steps/Teacher";
 import Final from "../../components/molecules/steps/Final";
 import FooterMolecule from "@/components/molecules/FooterMolecule";
 
-const postQuestion = () => {
+const PostQuestion = () => {
   const [currentStep, setCurrentStep] = useState(1);
   const [userData, setUserData] = useState("");
   const [finalData, setFinalData] = useState([]);
@@ -92,4 +92,4 @@ const postQuestion = () => {
   );
 };
 
-export default postQuestion;
+export default PostQuestion;
