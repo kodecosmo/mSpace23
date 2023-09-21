@@ -24,7 +24,8 @@ const Final = () => {
           You have successfully posted your question. You will be notified once a teacher has answered your question.
         </div>
 
-        <a className="mt-10" href="/">
+        {/* Should insert the feed location to href */}
+        <a className="mt-10" href="">
           <button className="h-10 px-5 text-green-700 transition-colors duration-150 border border-gray-300 rounded-lg focus:shadow-outline hover:bg-green-500 hover:text-green-100">
             Done
           </button>
