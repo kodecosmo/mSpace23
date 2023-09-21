@@ -52,6 +52,24 @@ const Question = () => {
         </div>
       </div>
 
+      {/* Detailed Question */}
+      <div className="w-full mx-2 flex-1">
+        <div className="font-bold text-gray-500 h-6 mt-3 text-xs leading-8">
+          Question in details
+        </div>
+
+        <div className="bg-white flex">
+          <textarea
+            rows={4}
+            onChange={handleChange}
+            value={userData["question_details"] || ""}
+            name="question_details"
+            placeholder="Enter your question here..."
+            className="p-1 px-2 my-2 appearance-none outline-none w-full text-gray-800 border border-gray-200 hover:border-primary focus:border-primary rounded"
+          />
+        </div>
+      </div>
+
       {/* Upload a document or picture */}
       <div className="w-full mx-2 flex-1">
         <label class="font-bold text-gray-500 h-6 mt-3 text-xs leading-8">
@@ -76,7 +94,7 @@ const Question = () => {
             <div class="flex text-sm text-gray-600">
               <label
                 for="file-upload"
-                class="relative cursor-pointer bg-white rounded-md font-medium text-primary hover:text-[#FFA24A] focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
+                class="relative cursor-pointer bg-white rounded-md font-medium text-primary hover:text-[#FFA24A] focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:primary"
               >
                 <span>Upload a file</span>
                 <input

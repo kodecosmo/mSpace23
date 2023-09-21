@@ -8,44 +8,39 @@ import { StepperContext } from "../../context/StepperContext";
 import Question from "../../components/molecules/steps/Question";
 import Teacher from "../../components/molecules/steps/Teacher";
 import Final from "../../components/molecules/steps/Final";
+import FooterMolecule from "@/components/molecules/FooterMolecule";
 
 const postQuestion = () => {
+  const [currentStep, setCurrentStep] = useState(1);
+  const [userData, setUserData] = useState("");
+  const [finalData, setFinalData] = useState([]);
 
-  const [currentStep, setCurrentStep] = useState(1)
-  const [userData, setUserData] = useState('')
-  const [finalData, setFinalData] = useState([])
-
-
-  const steps = [
-    "Question",
-    "Teacher",
-    "Complete"
-  ]
+  const steps = ["Question", "Teacher", "Complete"];
 
   const displayStep = (step) => {
-    switch(step) {
+    switch (step) {
       case 1:
-        return <Question />
+        return <Question />;
       case 2:
-        return <Teacher />
+        return <Teacher />;
       case 3:
-        return <Final />
+        return <Final />;
       default:
     }
-  }
+  };
 
   const handleClick = (direction) => {
-    let newStep = currentStep
+    let newStep = currentStep;
 
-    direction === "next" ? newStep++ : newStep--
+    direction === "next" ? newStep++ : newStep--;
     // check steps are withing bounds
-    newStep > 0 && newStep <= steps.length && setCurrentStep(newStep)
-  }
+    newStep > 0 && newStep <= steps.length && setCurrentStep(newStep);
+  };
 
   return (
     <>
       <NavbarMolecule />
-      <section className="font-sans antialiased text-gray-600 min-h-full flex flex-col">
+      <section className="mb-4 font-sans antialiased text-gray-600 min-h-full flex flex-col">
         <div className="relative overflow-hidden mt-10">
           <img
             src="https://tailwindui.com/img/beams-basic.png"
@@ -61,37 +56,38 @@ const postQuestion = () => {
           </div>
         </div>
 
-        <div className="mt-4 md:w-1/2 mx-auto rounded-2xl ring pb-2 ring-slate-300 ring-opacity-50">
-
+        <div className="flex flex-col justify-center mt-4 md:w-1/2 mx-auto rounded-2xl ring pb-2 ring-slate-300 ring-opacity-50">
           {/* Stepper */}
           <div className="container mt-5 horizontal">
-            <Stepper 
-              steps={steps}
-              currentStep={currentStep}
-            />
-          
-          {/* Display Component */}
-          <div className="my-10 p-10">
-            <StepperContext.Provider value={{
-              userData,
-              setUserData,
-              finalData,
-              setFinalData
-            }} >
-              {displayStep(currentStep)}
-            </StepperContext.Provider>
-          </div>
-          
+            <Stepper steps={steps} currentStep={currentStep} />
+
+            {/* Display Component */}
+            <div className="my-10 p-10">
+              <StepperContext.Provider
+                value={{
+                  userData,
+                  setUserData,
+                  finalData,
+                  setFinalData,
+                }}
+              >
+                {displayStep(currentStep)}
+              </StepperContext.Provider>
+            </div>
           </div>
 
           {/* Navigation */}
-          <StepperControl 
-            handleClick={handleClick}
-            currentStep={currentStep}
-            step={steps}
-          />
+          {currentStep !== steps.length && (
+            <StepperControl
+              handleClick={handleClick}
+              currentStep={currentStep}
+              step={steps}
+            />
+          )}
         </div>
       </section>
+
+      <FooterMolecule />
     </>
   );
 };
