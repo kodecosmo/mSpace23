@@ -1,7 +1,5 @@
 import Header from '@/components/molecules/HeaderMolecule'
 import NavbarMolecule from '@/components/molecules/NavbarMolecule'
-import IntroMolecule from '@/components/molecules/IntroMolecule'
-import FooterMolecule from '@/components/molecules/FooterMolecule'
 import SideNavbarMolecule from '@/components/molecules/SideNavbarMolecule'
 
 import { useState, useEffect } from 'react';
@@ -39,85 +37,13 @@ export default function Dashboard() {
           <SideNavbarMolecule windowHeight={windowHeight} />
 
           <div className="container">
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
-            kenura<br />
+
+            Dashboard Page
 
           </div>
 
         </div>
       </main>
-
-      
       
     </>
   )
