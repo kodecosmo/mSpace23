@@ -2,6 +2,8 @@ export default function IntroMolecule() {
     
     return (
         <section id="intro" className="w-full max-w-screen-xl mx-auto flex flex-col items-center justify-start text-left text-base">
+
+          {/* Hero section */}
             <div className="w-full flex flex-row flex-wrap pt-8 pb-20 px-16 box-border items-center justify-start gap-[43px] z-10 font-poppins">
 
                 <div className="flex-1">
@@ -50,6 +52,7 @@ export default function IntroMolecule() {
                 <img className="flex-1 max-w-full overflow-hidden h-[654.93px] lg:object-scale-down object-cover lg:block hidden" alt="" fill={true} src="/content@2x.png" />
 
             </div>
+
         </section>
     )
 }
