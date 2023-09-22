@@ -1,3 +1,3 @@
 export default function Profie() {
-  return <div>Profie</div>
+  return <div>Profie-loading dashboard</div>
 }

@@ -25,3 +25,28 @@ export const accordions = [
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae temporibus beatae, totam repudiandae nam recusandae ea dolores tempora maxime. dolor sit amet  dolor sit amet ",
     },
 ];
+
+export const classes = [
+    {
+        id: 1,
+        question: "Updates",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+        image: "https://source.unsplash.com/1600x900/?yoga",
+        price: 30,
+    },
+    {
+        id: 2,
+        question: "Tutors",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+        image: "https://source.unsplash.com/1600x900/?yoga",
+        price: 30,
+    },
+    {
+        id: 3,
+        question: "Question",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+        image: "https://source.unsplash.com/1600x900/?yoga",
+        price: 30,
+    },
+    
+];
