@@ -4,7 +4,7 @@ import SideNavbarMolecule from '@/components/molecules/SideNavbarMolecule'
 
 import { useState, useEffect } from 'react';
 
-export default function Answers() {
+export default function Calender() {
 
     const [windowHeight, setWindowHeight] = useState(0);
 
@@ -38,7 +38,7 @@ export default function Answers() {
 
                     <div className="container">
 
-                        Answers Page
+                        Calender Page
 
                     </div>
 
