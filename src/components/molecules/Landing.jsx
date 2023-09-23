@@ -3,25 +3,38 @@ import React from "react";
 const landing = () => {
   return (
     <>
-      {/* Subjects */}
-      {/* 
-      <section className="flex flex-col items-start w-full mb-11">
-        <div className="grid grid-cols-6 grid-rows-2 items-stretch max-w-[463px] w-full self-center md:flex md:justify-between md:items-center md:pb-6 md:pt-6">
-          <a href="/" className="">
-            <img
-              src="/site_media/version-1de7ac9e60/images/homepage/topic-math.png"
-              alt="Math"
-              width="132"
-              height="132"
-            />
-            <h3>Math</h3>
+      {/* Subjects - need to do this again */}
+      <section className="max-w-5xl px-5 mx-auto mt-16 md:mt-10 md:mb-24 text-center w-full flex flex-col items-start">
+        <div className="grid grid-cols-6 grid-rows-2 items-stretch max-w-[550px] w-full self-center md:flex md:py-6 md:justify-between md:items-start md:max-w-[100%]">
+          <a href="/subjects/math/" className="flex flex-col items-center flex-1 border-r-[#ccc] border-r-[1px] py-2 px-[30px] gap-[2px] mt-5">
+            <img src="/site_media/version-1de7ac9e60/images/homepage/topic-math.png" alt="Math" width="132" height="132" loading="lazy" />
+            <h3 className=" text-base md:text-[18px] mb-auto font-semibold text-center "> Maths </h3>
+          </a>
+
+          <a href="/subjects/physics/" className="flex flex-col items-center flex-1 border-r-[#ccc] border-r-[1px] py-2 px-[30px] gap-[2px] mt-5">
+            <img src="/site_media/version-1de7ac9e60/images/homepage/topic-math.png" alt="Math" width="132" height="132" loading="lazy" />
+            <h3 className=" text-base md:text-[18px] mb-auto font-semibold text-center "> Physics </h3>
+          </a>
+
+          <a href="/subjects/chemistry/" className="flex flex-col items-center flex-1 border-r-[#ccc] border-r-[1px] py-2 px-[30px] gap-[2px] mt-5">
+            <img src="/site_media/version-1de7ac9e60/images/homepage/topic-math.png" alt="Math" width="132" height="132" loading="lazy" />
+            <h3 className=" text-base md:text-[18px] mb-auto font-semibold text-center "> Chemistry </h3>
+          </a>
+
+          <a href="/subjects/biology/" className="flex flex-col items-center flex-1 border-r-[#ccc] border-r-[1px] py-2 px-[30px] gap-[2px] mt-5">
+            <img src="/site_media/version-1de7ac9e60/images/homepage/topic-math.png" alt="Math" width="132" height="132" loading="lazy" />
+            <h3 className=" text-base md:text-[18px] mb-auto font-semibold text-center "> Biology </h3>
+          </a>
+
+          <a href="/subjects/cs/" className="flex flex-col items-center flex-1 border-r-[#ccc] border-r-[1px] py-2 px-[30px] gap-[2px] mt-5">
+            <img src="/site_media/version-1de7ac9e60/images/homepage/topic-math.png" alt="Math" width="132" height="132" loading="lazy" />
+            <h3 className=" text-base md:text-[18px] mb-auto font-semibold text-center "> Computer Science </h3>
           </a>
         </div>
-      </section> 
-      */}
+      </section>
 
       {/* What makes StudyMate special */}
-      <section className="container flex flex-col mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row max-w-5xl">
+      <section className="container flex flex-col mx-auto md:mt-10 space-y-12 md:space-y-0 md:flex-row max-w-5xl">
         <div className="flex flex-col space-y-12 md:w-1/2 mx-auto">
           <h2 className="max-w-md text-4xl font-bold text-center md:text-left">
             {" "}
@@ -122,8 +135,8 @@ const landing = () => {
             <span className="text-primary"> StudyMate! </span>
           </h2>
 
-          <div className="flex max-w-5xl mx-auto gap-8 group">
-            <div className="bg-primary/10 group-hover:blur-sm group-hover:hover:blur-none group-hover:scale-[0.85] transition duration-200 ease-in-out group-hover:hover:scale-100  cursor-pointer p-8 rounded-xl mix-blend-luminosity">
+          <div className="flex flex-col md:flex-row max-w-5xl mx-auto gap-8 group">
+            <div className="bg-primary/10 md:group-hover:blur-sm md:group-hover:hover:blur-none md:group-hover:scale-[0.85] md:transition duration-200 md:ease-in-out md:group-hover:hover:scale-100  cursor-pointer p-8 rounded-xl mix-blend-luminosity">
               <img src="" alt="Person 01" className="h-20 mx-auto" />
               <h4 className="uppercase text-xl font-bold">
                 Kaviru Hapuarachchi
@@ -140,7 +153,7 @@ const landing = () => {
               </button>
             </div>
 
-            <div className="bg-primary/10 group-hover:hover:blur-none group-hover:blur-sm group-hover:scale-[0.85] transition duration-200 ease-in-out  group-hover:hover:scale-100 cursor-pointer p-8 rounded-xl mix-blend-luminosity">
+            <div className="bg-primary/10 md:group-hover:blur-sm md:group-hover:hover:blur-none md:group-hover:scale-[0.85] md:transition duration-200 md:ease-in-out md:group-hover:hover:scale-100  cursor-pointer p-8 rounded-xl mix-blend-luminosity">
               <img src="" alt="Person 02" className="h-20 mx-auto" />
               <h4 className="uppercase text-xl font-bold">
                 Ridmaka Hapuarachchi
@@ -157,7 +170,7 @@ const landing = () => {
               </button>
             </div>
 
-            <div className="bg-primary/10 group-hover:hover:blur-none group-hover:blur-sm group-hover:scale-[0.85] transition duration-200 ease-in-out group-hover:hover:scale-100 cursor-pointer p-8 rounded-xl mix-blend-luminosity">
+            <div className="bg-primary/10 md:group-hover:blur-sm md:group-hover:hover:blur-none md:group-hover:scale-[0.85] md:transition duration-200 md:ease-in-out md:group-hover:hover:scale-100  cursor-pointer p-8 rounded-xl mix-blend-luminosity">
               <img src="" alt="Person 03" className="h-20 mx-auto" />
               <h4 className="uppercase text-xl font-bold">Name GoesHere</h4>
 
@@ -180,7 +193,7 @@ const landing = () => {
         <div className="max-w-6xl px-5 mx-auto mt-24 bg-primary rounded-lg flex flex-col md:flex-row justify-between items-center">
           <div className="py-4 flex flex-col mb-4 justify-center">
             <h2 className="text-4xl font-bold text-white py-4 text-center md:text-left">
-              Be a pert of 
+              Be a part of 
               <span className="text-text-color"> StudyMate </span> today!
             </h2>
 

@@ -1,17 +1,17 @@
 export default function IntroMolecule() {
     
     return (
-        <section id="intro" className="w-full max-w-screen-xl mx-auto flex flex-col items-center justify-start text-left text-base">
+        <section id="intro" className="w-full max-w-5xl mx-auto flex flex-col items-center justify-start text-left text-base">
 
           {/* Hero section */}
-            <div className="w-full flex flex-row flex-wrap pt-8 pb-20 px-16 box-border items-center justify-start gap-[43px] z-10 font-poppins">
+            <div className="w-full flex md:flex-row flex-col-reverse pt-8 px-16 box-border items-center justify-start gap-[43px] z-10 font-poppins">
 
                 <div className="flex-1">
                     <div className="w-full flex flex-col items-start justify-start gap-[30px]">
 
-                        <b className="inline-block font-merriweather leading-normal text-6xl">Start Asking, Start Learning</b>
+                        <b className="inline-block text-3xl font-merriweather leading-normal lg:text-6xl md:text-5xl">Start Asking, Start Learning</b>
 
-                        <div className="text-[19.5px] inline-block opacity-[0.5]">
+                        <div className="text-lg inline-block opacity-[0.5]">
                             <p className="leading-8">Empower your learning journey. Start Asking, Start Learning. Discover answers, connect with experts, and excel academically</p>
                             <p className="leading-9">After all the best way to learn is by asking questions!</p>
                         </div>
@@ -28,28 +28,28 @@ export default function IntroMolecule() {
                         </div>
                     </div>
 
-                    <div className="flex flex-row items-start justify-start gap-3 text-[15.81px] mt-8">
+                    <div className="flex flex-wrap flex-2 items-start justify-between gap-3 text-sm mt-8">
 
-                        <div className="flex flex-row items-center justify-start gap-[14.05px]">
+                        <div className="flex sm:flex-row flex-col text-center items-center justify-start gap-3">
                             <img className="w-14 h-14" alt="Ask Any Question" fill={true} src="/icon.svg" />
-                            <div className="font-semibold">Ask Any Question</div>
+                            <div className="font-semibold">Ask Questions</div>
                         </div>
 
-                        <div className="flex flex-row items-center justify-start gap-[14.05px]">
+                        <div className="flex sm:flex-row flex-col text-center items-center justify-start gap-[14.05px]">
                             <img className="w-14 h-14" alt="Schedule Tutoring Sessions" fill={true} src="/icon1.svg" />
-                            <div className="font-semibold">Schedule Tutoring Sessions</div>
+                            <div className="font-semibold">Schedule Sessions</div>
                         </div>
 
-                        <div className="flex flex-row items-center justify-start gap-[14.05px]">
+                        <div className="flex sm:flex-row flex-col text-center items-center justify-start gap-[14.05px]">
                             <img className="w-14 h-14" alt="Clarify All Your Doubts" fill={true} src="/icon2.svg" />
-                            <div className="font-semibold">Clarify All Your Doubts</div>
+                            <div className="font-semibold">Clarify Doubts</div>
                         </div>
 
                     </div>
 
                 </div>
 
-                <img className="flex-1 max-w-full overflow-hidden h-[654.93px] lg:object-scale-down object-cover lg:block hidden" alt="" fill={true} src="/content@2x.png" />
+                <img className="flex-1 max-w-full overflow-hidden h-[654.93px] md:object-scale-down object-cover lg:block" alt="" fill={true} src="/content@2x.png" />
 
             </div>
 
