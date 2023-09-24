@@ -162,6 +162,67 @@ export default function TeacherProfile(props) {
             </div>
           </div>
         </div>
+
+        <div className="flex justify-center items-center flex-wrap w-full">
+          <div className="width-[500px] shadow-[2px_2px_30px_rgba(0,0,0,0.1)] bg-white p-5 m-4 cursor-pointer">
+            <div className="flex justify-between items-center mb-5">
+              <div className="flex items-center">
+                <div className=" w-[50px] h-[50px] rounded-[50%] overflow-hidden mr-3">
+                  <img src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="person" className="w-full h-full object-cover object-center"/>
+                </div>
+
+                <div className="flex flex-col">
+                  <h4 className="text-text-color text-[1.1rem] leading-[0.5px]"> Kaviru Happuarachchi </h4>
+                  <span className="text-[#979797] text-[0.8rem]"> @ksrx </span>
+                </div>
+              </div>
+
+              <div className="text-[#f9d71c] flex">
+                <AiFillStar />
+                <AiFillStar />
+                <AiFillStar />
+                <AiOutlineStar />
+              </div>
+            </div>
+
+            <div className="client-comment">
+              <p className="text-[0.9rem] text-text-color">
+                The review goes here. The review goes here. The review goes. The review goes. The review goes. The review goes. The review goes here. the review giebs here
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-center items-center flex-wrap w-full">
+          <div className="width-[500px] shadow-[2px_2px_30px_rgba(0,0,0,0.1)] bg-white p-5 m-4 cursor-pointer">
+            <div className="flex justify-between items-center mb-5">
+              <div className="flex items-center">
+                <div className=" w-[50px] h-[50px] rounded-[50%] overflow-hidden mr-3">
+                  <img src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="person" className="w-full h-full object-cover object-center"/>
+                </div>
+
+                <div className="flex flex-col">
+                  <h4 className="text-text-color text-[1.1rem] leading-[0.5px]"> Kaviru Happuarachchi </h4>
+                  <span className="text-[#979797] text-[0.8rem]"> @ksrx </span>
+                </div>
+              </div>
+
+              <div className="text-[#f9d71c] flex">
+                <AiFillStar />
+                <AiFillStar />
+                <AiFillStar />
+                <AiOutlineStar />
+              </div>
+            </div>
+
+            <div className="client-comment">
+              <p className="text-[0.9rem] text-text-color">
+                The review goes here. The review goes here. The review goes. The review goes. The review goes. The review goes. The review goes here. the review giebs here
+              </p>
+            </div>
+          </div>
+        </div>
+        
       </section>
     </>
   );
