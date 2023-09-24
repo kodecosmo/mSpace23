@@ -1,7 +1,7 @@
 export default function IntroMolecule() {
     
     return (
-        <section id="intro" className="w-full max-w-5xl mx-auto flex flex-col items-center justify-start text-left text-base">
+        <section id="intro" className="font-montserrat w-full max-w-5xl mx-auto flex flex-col items-center justify-start text-left text-base">
 
           {/* Hero section */}
             <div className="w-full flex md:flex-row flex-col-reverse pt-8 px-16 box-border items-center justify-start gap-[43px] z-10 font-poppins">

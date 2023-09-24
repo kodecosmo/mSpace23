@@ -11,7 +11,7 @@ export default function Topic() {
         <>
             <NavbarMolecule />
             <main className="max-w-5xl mx-auto">
-                <section className="font-sans antialiased text-gray-600 min-h-full flex flex-col mt-[30px]">
+                <section className="font-montserrat antialiased text-gray-600 min-h-full flex flex-col mt-[30px]">
                     <div className="relative overflow-hidden mt-10 h-[370px] items-center">
                         <img
                             src={image}

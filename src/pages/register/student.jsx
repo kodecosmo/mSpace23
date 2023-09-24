@@ -38,7 +38,7 @@ export default function teacherRegister() {
                         <div class="flex items-center h-5">
                             <input id="terms" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
                         </div>
-                        <label for="terms" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="terms-and-conditions" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a></label>
+                        <label for="terms" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="/terms-and-conditions" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a></label>
                     </div>
                     <button type="submit" class="focus:outline-none text-white bg-orange-400 hover:bg-orange-500 focus:ring-4 focus:ring-orange-300 rounded-lg text-md px-7 py-3 .5 mr-2 mb-2 dark:focus:ring-orange-900 font-semibold mt-10">Create new account</button>
                 </form>

@@ -4,7 +4,7 @@ const landing = () => {
   return (
     <>
       {/* Subjects - need to do this again */}
-      <section className="max-w-5xl px-5 mx-auto mt-16 md:mt-10 md:mb-24 text-center w-full flex flex-col items-start">
+      <section className="max-w-5xl px-5 mx-auto mt-16 md:mt-10 md:mb-24 text-center w-full flex flex-col items-start font-montserrat">
         <div className="grid grid-cols-6 grid-rows-2 items-stretch max-w-[550px] w-full self-center md:flex md:py-6 md:justify-between md:items-start md:max-w-[100%]">
           <a href="/topics/mathematics/" className="flex flex-col items-center flex-1 border-r-[#ccc] border-r-[1px] py-2 px-[30px] gap-[2px] mt-5">
             <img src="https://brilliant.org/site_media/version-1de7ac9e60/images/homepage/topic-math.png" alt="Math" width="132" height="132" loading="lazy" />
@@ -34,7 +34,7 @@ const landing = () => {
       </section>
 
       {/* What makes StudyMate special */}
-      <section className="container flex flex-col mx-auto md:mt-10 space-y-12 md:space-y-0 md:flex-row max-w-5xl">
+      <section className="font-montserrat container flex flex-col mx-auto md:mt-10 space-y-12 md:space-y-0 md:flex-row max-w-5xl">
         <div className="flex flex-col space-y-12 md:w-1/2 mx-auto">
           <h2 className="max-w-md text-4xl font-bold text-center md:text-left">
             {" "}
@@ -129,7 +129,7 @@ const landing = () => {
 
       {/* Testimonials */}
       <section>
-        <div className="max-w-6xl px-5 mx-auto mt-32 text-center">
+        <div className="font-montserrat max-w-6xl px-5 mx-auto mt-32 text-center">
           <h2 className="text-4xl font-bold text-center mb-16">
             What others say about{" "}
             <span className="text-primary"> StudyMate! </span>
@@ -189,7 +189,7 @@ const landing = () => {
       </section>
 
       {/* CTA */}
-      <section className="mb-10">
+      <section className="font-montserrat mb-10">
         <div className="max-w-6xl px-5 mx-auto mt-24 bg-primary rounded-lg flex flex-col md:flex-row justify-between items-center">
           <div className="py-4 flex flex-col mb-4 justify-center">
             <h2 className="text-4xl font-bold text-white py-4 text-center md:text-left">
