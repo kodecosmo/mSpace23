@@ -137,7 +137,7 @@ export default function TeacherProfile(props) {
 
           {/* Review 01 */}
           <div className="flex justify-center items-center flex-wrap md:w-[50%] w-full">
-            <div className="width-[500px] shadow-[2px_2px_30px_rgba(0,0,0,0.1)] bg-white p-5 m-4 cursor-pointer">
+            <div className="width-[500px] shadow-[2px_2px_30px_rgba(0,0,0,0.1)] bg-white p-5 m-4 cursor-pointer hover:scale-110 transition duration-200 ease-in-out">
               <div className="flex justify-between items-center mb-5">
                 <div className="flex items-center">
                   <div className=" w-[50px] h-[50px] rounded-[50%] overflow-hidden mr-3">
