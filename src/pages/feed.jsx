@@ -7,13 +7,13 @@ const feed = () => {
     <>
       <NavbarMolecule />
 
-      <div className="mt-20">
+      <div className="mt-20 w-full md:w-1/2 justify-center mx-auto flex flex-col gap-11">
         <FeedQuestion
           name="Kaviru"
           uName="ksrx"
           date="2"
-          questionTitle="How to patch KDE on FreeBSD"
-          questionDescription="Description DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription Description Description Description Description Description "
+          questionTitle="How to patch KDE on FreeBSD" 
+          questionDescription="Description DescriptionDescriptionDescriptionDescript ionDescriptionDescriptionDescri ptionDescriptionDescriptionDescription Description Description Description Description Description "
           tag1="#Python"
           tag2="#JavaScript"
         />
@@ -22,7 +22,7 @@ const feed = () => {
           uName="ksrx"
           date="2"
           questionTitle="How to patch KDE on FreeBSD"
-          questionDescription="Description DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription Description Description Description Description Description "
+          questionDescription="Description DescriptionDescriptionDescriptionDescriptionDescript ionDescriptionDescriptionDescrip tionDescriptionDescription Description Description Description Description Description "
           tag1="#Python"
           tag2="#JavaScript"
         />
@@ -31,7 +31,7 @@ const feed = () => {
           uName="ksrx"
           date="2"
           questionTitle="How to patch KDE on FreeBSD"
-          questionDescription="Description DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription Description Description Description Description Description "
+          questionDescription="Description DescriptionDescriptionDescriptionDescriptionDescri ptionDescriptionDescriptionDes criptionDescriptionDescription Description Description Description Description Description "
           tag1="#Python"
           tag2="#JavaScript"
         />
