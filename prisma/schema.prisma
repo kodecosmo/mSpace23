@@ -9,28 +9,32 @@ generator client {
 
 // Models
 
-model Post {
-  id        Int      @id @default(autoincrement())
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  title     String   @db.VarChar(255)
-  content   String?
-  published Boolean  @default(false)
-  author    User     @relation(fields: [authorId], references: [id])
-  authorId  Int
+model Subjects {
+  id            Int      @id @default(autoincrement())
+  name          String   @unique
+  description   String?
 }
 
-model Profile {
-  id     Int     @id @default(autoincrement())
-  bio    String?
-  user   User    @relation(fields: [userId], references: [id])
-  userId Int     @unique
+model TeacherQualifications {
+  id            Int      @id @default(autoincrement())
+  name          String   @unique
+  description   String?
 }
 
-model User {
-  id      Int      @id @default(autoincrement())
-  email   String   @unique
-  name    String?
-  posts   Post[]
-  profile Profile?
+model Genders {
+  id            Int      @id @default(autoincrement())
+  name          String   @unique
+  description   String?
+}
+
+model Questions {
+  id            Int      @id @default(autoincrement())
+  title          String
+  details   String
+  subject_id   String
+  image_id   String?
+  teachers_gender   Int @default(1)
+  teachers_max_qualifications Int?
+  accept_session_requests Boolean
+  visibility String @default("everyone") //everyone, teachers
 }
