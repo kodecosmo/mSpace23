@@ -1,6 +1,6 @@
 import { FaCircle, FaEllipsisV } from "react-icons/fa";
 
-const FeedQuestion = (props) => {
+const FeedQuestion = () => {
   return (
       <div className="px-5 py-5 rounded-lg shadow-[2px_2px_30px_rgba(0,0,0,0.1)]">
         <div className="flex justify-between items-cente ">
@@ -13,13 +13,13 @@ const FeedQuestion = (props) => {
               />
             </div>
             <div>
-              <div>{props.name}</div>
+              <div>Kaviru Happuarachchi</div>
               <div className="flex justify-start items-center gap-2">
-                <div>@{props.uName}</div>
+                <div>@ksrx</div>
                 <div>
                   <FaCircle fill="#444444" className="h-1 w-1 opacity-40" />
                 </div>
-                <div className="opacity-40 text-sm">{props.date} days ago</div>
+                <div className="opacity-40 text-sm">2 days ago</div>
               </div>
             </div>
           </div>
@@ -29,9 +29,12 @@ const FeedQuestion = (props) => {
         </div>
         <div>
           <div className="flex flex-col mt-5 mb-5">
-            <h2 className="font-bold">{props.questionTitle}</h2>
+            <h2 className="font-bold">How to patch KDE on FreeBSD?</h2>
             <p className="mt-5">
-              {props.questionDescription}
+              How to patch KDE on FreeBSD? How to patch KDE on FreeBSD? How to
+              patch KDE on FreeBSD? How to patch KDE on FreeBSD? How to patch
+              KDE on FreeBSD? How to patch KDE on FreeBSD? How to patch KDE on
+              FreeBSD? How to patch KDE on FreeBSD? How to patch KDE on
             </p>
           </div>
 
@@ -45,10 +48,10 @@ const FeedQuestion = (props) => {
         <div className="flex justify-between items-center mx-5">
           <div className="flex gap-1 flex-wrap">
             <button className="bg-[#4584b6] text-white rounded-lg px-3 py-1 text-xs">
-              {props.tag1}
+              #Python
             </button>
             <button className="bg-[#ffde57] text-text-color rounded-lg px-3 py-1 text-xs">
-              {props.tag2}
+              #JavaScript
             </button>
           </div>
           <div>
