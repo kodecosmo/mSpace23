@@ -8,7 +8,33 @@ const feed = () => {
       <NavbarMolecule />
 
       <div className="mt-20">
-        <FeedQuestion />
+        <FeedQuestion
+          name="Kaviru"
+          uName="ksrx"
+          date="2"
+          questionTitle="How to patch KDE on FreeBSD"
+          questionDescription="Description DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription Description Description Description Description Description "
+          tag1="#Python"
+          tag2="#JavaScript"
+        />
+        <FeedQuestion
+          name="Kaviru"
+          uName="ksrx"
+          date="2"
+          questionTitle="How to patch KDE on FreeBSD"
+          questionDescription="Description DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription Description Description Description Description Description "
+          tag1="#Python"
+          tag2="#JavaScript"
+        />
+        <FeedQuestion
+          name="Kaviru"
+          uName="ksrx"
+          date="2"
+          questionTitle="How to patch KDE on FreeBSD"
+          questionDescription="Description DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription Description Description Description Description Description "
+          tag1="#Python"
+          tag2="#JavaScript"
+        />
       </div>
 
       <FooterMolecule />
