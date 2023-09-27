@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import NavbarMolecule from "../../components/molecules/NavbarMolecule";
-import FooterMolecule from "@/components/molecules/FooterMolecule";
+import { FooterMolecule } from "@/components/molecules/FooterMolecule";
 import TeacherProfile from "@/components/atoms/navbar/TeacherprofileAtom";
 
 export default function Tutors() {

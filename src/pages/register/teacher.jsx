@@ -1,4 +1,4 @@
-import FooterMolecule from "@/components/molecules/FooterMolecule";
+import { FooterMolecule } from "@/components/molecules/FooterMolecule";
 import NavbarMolecule from "@/components/molecules/NavbarMolecule";
 
 

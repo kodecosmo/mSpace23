@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+
 import OptionAtom from '@/components/atoms/modals/OptionAtom';
 import SelectAtom from '@/components/atoms/modals/SelectAtom';
 import SubmitButtonAtom from '@/components/atoms/modals/SubmitButtonAtom';
@@ -10,11 +12,10 @@ import NavbarMolecule from '@/components/molecules/NavbarMolecule'
 import SideNavbarMolecule from '@/components/molecules/SideNavbarMolecule'
 import CreateMolecule from '@/components/molecules/modals/CreateMolecule';
 import UpdateMolecule from '@/components/molecules/modals/UpdateMolecule';
-
-import { useState, useEffect } from 'react';
 import TableBodyMolecule from '@/components/molecules/table/TableBodyMolecule';
 import TablePaginationMolecule from '@/components/molecules/table/TablePaginationMolecule';
 import TableHeadingMolecule from '@/components/molecules/table/TableHeadingMolecule';
+import { DashboardFooterMolecule } from '@/components/molecules/FooterMolecule';
 
 export default function DashboardQuestions() {
 
@@ -411,6 +412,7 @@ export default function DashboardQuestions() {
 
                                 {/* ------------------------------------------------------------------------------ */}
 
+                                <DashboardFooterMolecule />
 
                             </div>
                         </div>

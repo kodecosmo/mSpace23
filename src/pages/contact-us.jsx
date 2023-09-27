@@ -1,7 +1,7 @@
 import React from "react";
 
 import NavbarMolecule from "@/components/molecules/NavbarMolecule";
-import FooterMolecule from "@/components/molecules/FooterMolecule";
+import { FooterMolecule } from "@/components/molecules/FooterMolecule";
 
 const contactus = () => {
   return (

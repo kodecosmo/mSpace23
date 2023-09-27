@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import NavbarMolecule from "../../components/molecules/NavbarMolecule";
-import FooterMolecule from "@/components/molecules/FooterMolecule";
+import { FooterMolecule } from "@/components/molecules/FooterMolecule";
 import TeacherAtom from "@/components/atoms/navbar/TeacherAtom";
 
 var image = "https://images.pexels.com/photos/6502817/pexels-photo-6502817.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
