@@ -22,7 +22,7 @@ const InputTags = () => {
       {tags.map((tag, index) => (
         <div className=" bg-gray-100 inline-block px-3 py-1 rounded-3xl">
           <span>{tag}</span>
-          <span 
+          <span
             key={index}
             className="h-5 w-5 bg-slate-500 font-normal text-white rounded-full inline-flex justify-center ml-2 items-center cursor-pointer"
             onClick={() => removeTag(index)}

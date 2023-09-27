@@ -22,7 +22,7 @@ const Teacher = () => {
             onChange={handleChange}
             value={userData["teacher_gender"] || ""}
             name="teacher_gender"
-            className="p-1 px-2 my-2 appearance-none outline-none w-full text-gray-500 border border-gray-200 hover:border-primary focus:border-primary rounded focus:outline-none"
+            className="p-1 px-2 my-2 appearance-none focus:ring-0 outline-none w-full text-gray-500 border border-gray-200 hover:border-primary focus:border-primary rounded focus:outline-none"
             style={{ outline: "none" }}
           >
             <option value="both">Prefer both</option>
@@ -43,7 +43,7 @@ const Teacher = () => {
             onChange={handleChange}
             value={userData["teacher_qualification"] || ""}
             name="teacher_qualification"
-            className="p-1 px-2 my-2 appearance-none outline-none w-full text-gray-500 border border-gray-200 hover:border-primary focus:border-primary rounded focus:outline-none"
+            className="p-1 px-2 my-2 appearance-none focus:ring-0 outline-none w-full text-gray-500 border border-gray-200 hover:border-primary focus:border-primary rounded focus:outline-none"
             style={{ outline: "none" }}
           >
             <option value="">Select qualification</option>
@@ -66,7 +66,7 @@ const Teacher = () => {
             onChange={handleChange}
             value={userData["requests"] || ""}
             name="requests" // Corrected name attribute
-            className="p-1 px-2 my-2 appearance-none outline-none w-full text-gray-500 border border-gray-200 hover:border-primary focus:border-primary rounded focus:outline-none"
+            className="p-1 px-2 my-2 appearance-none focus:ring-0 outline-none w-full text-gray-500 border border-gray-200 hover:border-primary focus:border-primary rounded focus:outline-none"
           >
             <option value="">Select an option</option>
             <option value="Yes">Yes</option>
@@ -87,7 +87,7 @@ const Teacher = () => {
             onChange={handleChange}
             value={userData["visibility"] || ""}
             name="visibility" // Corrected name attribute
-            className="p-1 px-2 my-2 appearance-none outline-none w-full text-gray-500 border border-gray-200 hover:border-primary focus:border-primary rounded focus:outline-none"
+            className="p-1 px-2 my-2 appearance-none outline-none focus:ring-0 w-full text-gray-500 border border-gray-200 hover:border-primary focus:border-primary rounded focus:outline-none"
           >
             <option value="">Select an option</option>
             <option value="Everyone">Teachers Only</option>
