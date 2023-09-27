@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { StepperContext } from "../../../context/StepperContext";
+import InputTags from "@/components/atoms/InputTags";
 
 const Question = () => {
   const { userData, setUserData } = useContext(StepperContext);
@@ -11,7 +12,6 @@ const Question = () => {
 
   return (
     <div className="flex flex-col">
-
       {/* Question title */}
       <div className="w-full mx-2 flex-1">
         <div className="font-bold text-gray-500 h-6 mt-3 text-xs leading-8">
@@ -24,7 +24,7 @@ const Question = () => {
             value={userData["question_title"] || ""}
             name="question_title"
             placeholder="Question title"
-            className="p-1 px-2 my-2 appearance-none outline-none w-full text-gray-800 border border-gray-200 hover:border-primary focus:border-primary rounded"
+            className="p-1 px-2 my-2 focus:ring-0 appearance-none outline-none w-full text-gray-800 border border-gray-200 hover:border-primary focus:border-primary rounded"
           />
         </div>
       </div>
@@ -40,8 +40,8 @@ const Question = () => {
             onChange={handleChange}
             value={userData["question_subject"] || ""}
             name="question_subject"
-            className="p-1 px-2 my-2 appearance-none outline-none w-full text-gray-800 border border-gray-200 hover:border-primary focus:border-primary rounded focus:outline-none"
-            style={{ outline: 'none' }}
+            className="p-1 px-2 my-2 appearance-none focus:ring-0 outline-none w-full text-gray-800 border border-gray-200 hover:border-primary focus:border-primary rounded focus:outline-none"
+            style={{ outline: "none" }}
           >
             <option value="">Select a subject</option>
             <option value="Math">Math</option>
@@ -65,9 +65,18 @@ const Question = () => {
             value={userData["question_details"] || ""}
             name="question_details"
             placeholder="Enter your question here..."
-            className="p-1 px-2 my-2 appearance-none outline-none w-full text-gray-800 border border-gray-200 hover:border-primary focus:border-primary rounded"
+            className="p-1 px-2 my-2 focus:ring-0 appearance-none outline-none w-full text-gray-800 border border-gray-200 hover:border-primary focus:border-primary rounded"
           />
         </div>
+      </div>
+
+      {/* Specify tags */}
+      <div className="w-full mx-2 flex-1 mb-2">
+        <div className="font-bold text-gray-500 h-6 mt-3 text-xs leading-8">
+          Enter tags related to question
+        </div>
+
+        <InputTags />
       </div>
 
       {/* Upload a document or picture */}
