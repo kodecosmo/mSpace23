@@ -59,7 +59,7 @@ export const pricingPlans = [
       price: 1299,
       currency: 'LKR',
       frequency: 'One time',
-      description: 'This is a place you can start exploring Que',
+      description: 'This is a good starting porint to explore QUE. You can get all the nessesory features with this plan.',
       features: [
         '2h of sessions',
         '5 questions',

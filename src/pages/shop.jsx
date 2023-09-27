@@ -31,7 +31,7 @@ const shop = () => {
       <section className="relative">
         <div className="absolute inset-0 flex flex-col">
           <div className="flex-1"></div>
-          <div className="flex-1 bg-primary/5"></div>
+          <div className="flex-1 bg-primary-700/5"></div>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-12 lg:gap-8 py-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -43,7 +43,7 @@ const shop = () => {
               <h3 className="text-lg font-semibold leading-5">{plan.title}</h3>
 
               {plan.mostPopular && (
-                <p className="absolute top-0 -translate-y-1/2  bg-primary text-white px-3 py-0.5 text-sm font-semibold tracking-wide rounded-full shadow-sm">
+                <p className="absolute top-0 -translate-y-1/2  bg-primary-700 text-white px-3 py-0.5 text-sm font-semibold tracking-wide rounded-full shadow-sm">
                   Most Popular
                 </p>
               )}
@@ -52,7 +52,7 @@ const shop = () => {
                 {plan.description}
               </p>
 
-              <div className="mt-4 bg-primary/5 p-6 rounded-lg -mx-6">
+              <div className="mt-4 bg-primary-700/5 p-6 rounded-lg -mx-6">
                 <p className="text-sm font-semibold text-text-color/70 flex items-center">
                   <span>{plan.currency}</span>
                   <span className="text-4xl text-text-color ml-3">
@@ -82,8 +82,8 @@ const shop = () => {
                 className={`block mt-8 px-6 py-4 text-sm font-semibold leading-4 text-center rounded-lg
             ${
               plan.mostPopular
-                ? "text-white bg-primary hover:bg-text-color shadow-sm"
-                : "text-primary bg-primary/10 hover:bg-primary/20 shadow-sm"
+                ? "text-white bg-primary-700 hover:bg-text-color shadow-sm"
+                : "text-primary bg-primary-700/10 hover:bg-primary-700/20 shadow-sm"
             }
 
             `}
