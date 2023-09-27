@@ -6,7 +6,7 @@ import MultipleSubLink from '@/components/atoms/navbar/SideNavLink/MultipleSubLi
 export default function SideNavbarMolecule({ windowHeight = 0 }) {
     return (
         <>
-            <aside id="default-sidebar" className="sticky top-[70px] left-0 z-40 w-full max-w-[18rem] h-fit transition-transform -translate-x-full sm:translate-x-0 overflow-y-auto overflow-x-hidden" aria-label="Sidenav" style={{ height: (windowHeight - 70) + "px" }}>
+            <aside id="default-sidebar" className="sticky top-[70px] left-0 z-40 w-full max-w-[18rem] h-fit transition-transform -translate-x-full sm:translate-x-0 overflow-y-auto overflow-x-hidden border-r border-solid border-gray-200 bg-white dark:bg-gray-80" aria-label="Sidenav" style={{ height: (windowHeight - 70) + "px" }}>
                 <div className="overflow-y-auto py-5 px-3 bg-white dark:bg-gray-800 ">
                     <ul className="space-y-2">
 
@@ -20,13 +20,13 @@ export default function SideNavbarMolecule({ windowHeight = 0 }) {
                             svgPath={<><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" /><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" /></>}
                             subLinks={
                                 <>
-                                    <MultipleSubLink text="Post Question" href="/post-question" />
-                                    <MultipleSubLink text="Questions" href="/dashboard/questions" />
+                                    <MultipleSubLink text="Post Question" href="/dashboard/post-question" />
+                                    <MultipleSubLink text="My Questions" href="/dashboard/questions" />
                                 </>
                             }
                         />
 
-                        <SingleSideNavLink text="Answers" href="/dashboard/answers" svgPath={<><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" /><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" /></>} />
+                        <SingleSideNavLink text="My Answers" href="/dashboard/answers" svgPath={<><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" /><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" /></>} />
 
                         <SingleSideNavLink text="Tutoring Sessions" href="/dashboard/tutoring-sessions" svgPath={<><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" /><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" /></>} />
 

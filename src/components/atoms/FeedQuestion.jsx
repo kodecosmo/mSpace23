@@ -48,8 +48,8 @@ const FeedQuestion = (props) => {
           </button>
         </div>
         <div>
-          <button className="bg-primary text-white font-[500] flex items-center gap-2 hover:bg-text-color ease-in duration-300 py-2 rounded-xl px-4">
-            <FaArrowUp fill="#fff"/> Vote
+          <button className="bg-primary-700 text-white font-[500] flex items-center gap-2 hover:bg-text-color ease-in duration-300 py-2 rounded-xl px-4">
+            <FaArrowUp fill="#fff" /> Vote
           </button>
         </div>
       </div>

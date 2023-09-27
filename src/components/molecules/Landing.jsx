@@ -148,7 +148,7 @@ const landing = () => {
                 meet user experince expected from the app"
               </p>
 
-              <button className="bg-primary py-2.5 px-8 rounded-full hover:text-white hover:bg-text-color transition duration-100">
+              <button className="bg-primary-700 py-2.5 px-8 rounded-full hover:text-white hover:bg-text-color transition duration-100">
                 Get in Touch
               </button>
             </div>
@@ -165,7 +165,7 @@ const landing = () => {
                 meet user experince expected from the app"
               </p>
 
-              <button className="bg-primary py-2.5 px-8 rounded-full hover:text-white hover:bg-text-color transition duration-100">
+              <button className="bg-primary-700 py-2.5 px-8 rounded-full hover:text-white hover:bg-text-color transition duration-100">
                 Get in Touch
               </button>
             </div>
@@ -180,7 +180,7 @@ const landing = () => {
                 meet user experince expected from the app"
               </p>
 
-              <button className="bg-primary py-2.5 px-8 rounded-full hover:text-white hover:bg-text-color transition duration-100">
+              <button className="bg-primary-700 py-2.5 px-8 rounded-full hover:text-white hover:bg-text-color transition duration-100">
                 Get in Touch
               </button>
             </div>
@@ -190,10 +190,10 @@ const landing = () => {
 
       {/* CTA */}
       <section className="font-montserrat mb-10">
-        <div className="max-w-6xl px-5 mx-auto mt-24 bg-primary rounded-lg flex flex-col md:flex-row justify-between items-center">
+        <div className="max-w-6xl px-5 mx-auto mt-24 bg-primary-700 rounded-lg flex flex-col md:flex-row justify-between items-center">
           <div className="py-4 flex flex-col mb-4 justify-center">
             <h2 className="text-4xl font-bold text-white py-4 text-center md:text-left">
-              Be a part of 
+              Be a part of
               <span className="text-text-color"> StudyMate </span> today!
             </h2>
 
