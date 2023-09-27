@@ -1,7 +1,7 @@
 import { FaCheckCircle } from "react-icons/fa";
 import { pricingPlans } from "./Data";
 import NavbarMolecule from "@/components/molecules/NavbarMolecule";
-import FooterMolecule from "@/components/molecules/FooterMolecule";
+import { FooterMolecule } from "@/components/molecules/FooterMolecule";
 
 const shop = () => {
   return (
@@ -94,7 +94,7 @@ const shop = () => {
           ))}
         </div>
       </section>
-
+      
       <FooterMolecule />
     </>
   );
