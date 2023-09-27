@@ -1,7 +1,7 @@
 import React from "react";
 
 import NavbarMolecule from "@/components/molecules/NavbarMolecule";
-import FooterMolecule from "@/components/molecules/FooterMolecule";
+import { FooterMolecule } from "@/components/molecules/FooterMolecule";
 
 const contactus = () => {
   return (
@@ -79,7 +79,7 @@ const contactus = () => {
                   </textarea>
                 </div>
 
-                <button className="inline-block self-end bg-primary text-white font-bold rounded-lg px-6 py-2 uppercase text-sm"> Send Message </button>
+                <button className="inline-block self-end bg-primary-700 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm"> Send Message </button>
               </form>
             </div>
           </div>

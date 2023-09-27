@@ -1,4 +1,4 @@
-import FooterMolecule from "@/components/molecules/FooterMolecule";
+import { FooterMolecule } from "@/components/molecules/FooterMolecule";
 import NavbarMolecule from "@/components/molecules/NavbarMolecule";
 import React from "react";
 
@@ -86,25 +86,25 @@ const privacypolicy = () => {
               <p className="mb-4">
                 We use the information we collect in various ways, including to:
               </p>
-              <ul class="list-disc list-inside mb-4 ml-0 md:ml-6">
-                <li class="mb-2">Provide, operate, and maintain our website</li>
-                <li class="mb-2">
+              <ul className="list-disc list-inside mb-4 ml-0 md:ml-6">
+                <li className="mb-2">Provide, operate, and maintain our website</li>
+                <li className="mb-2">
                   Improve, personalize, and expand our website
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   Understand and analyze how you use our website
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   Develop new products, services, features, and functionality
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   Communicate with you, either directly or through one of our
                   partners, including for customer service, to provide you with
                   updates and other information relating to the website, and for
                   marketing and promotional purposes
                 </li>
-                <li class="mb-2">Send you emails</li>
-                <li class="mb-2">Find and prevent fraud</li>
+                <li className="mb-2">Send you emails</li>
+                <li className="mb-2">Find and prevent fraud</li>
               </ul>
 
               <h2 className="text-xl font-bold tracking-normal text-slate-900 sm:text-2xl mt-9 mb-4">

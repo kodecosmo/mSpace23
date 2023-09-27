@@ -1,5 +1,5 @@
 import FeedQuestion from "@/components/atoms/FeedQuestion";
-import FooterMolecule from "@/components/molecules/FooterMolecule";
+import { FooterMolecule } from "@/components/molecules/FooterMolecule";
 import NavbarMolecule from "@/components/molecules/NavbarMolecule";
 
 const feed = () => {
@@ -12,7 +12,7 @@ const feed = () => {
           name="Kaviru"
           uName="ksrx"
           date="2"
-          questionTitle="How to patch KDE on FreeBSD" 
+          questionTitle="How to patch KDE on FreeBSD"
           questionDescription="Description DescriptionDescriptionDescriptionDescript ionDescriptionDescriptionDescri ptionDescriptionDescriptionDescription Description Description Description Description Description "
           tag1="#Python"
           tag2="#JavaScript"
