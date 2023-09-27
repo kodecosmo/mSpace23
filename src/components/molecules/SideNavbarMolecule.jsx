@@ -6,7 +6,7 @@ import MultipleSubLink from '@/components/atoms/navbar/SideNavLink/MultipleSubLi
 export default function SideNavbarMolecule({ windowHeight = 0 }) {
     return (
         <>
-            <aside id="default-sidebar" className="sticky top-[70px] left-0 z-40 w-full max-w-[18rem] h-fit transition-transform -translate-x-full sm:translate-x-0 overflow-y-auto overflow-x-hidden border-r border-solid border-gray-200 bg-white dark:bg-gray-80" aria-label="Sidenav" style={{ height: (windowHeight - 70) + "px" }}>
+            <aside id="default-sidebar" className="sticky top-[70px] left-0 z-20 w-full max-w-[18rem] h-fit transition-transform -translate-x-full sm:translate-x-0 overflow-y-auto overflow-x-hidden border-r border-solid border-gray-200 bg-white dark:bg-gray-80" aria-label="Sidenav" style={{ height: (windowHeight - 70) + "px" }}>
                 <div className="overflow-y-auto py-5 px-3 bg-white dark:bg-gray-800 ">
                     <ul className="space-y-2">
 
