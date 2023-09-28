@@ -11,6 +11,7 @@ import Question from "@/components/molecules/steps/Question";
 import Teacher from "@/components/molecules/steps/Teacher";
 import Final from "@/components/molecules/steps/Final";
 import DashboardHeading from '@/components/molecules/DashboardHeadingMolecule';
+import Profile from '../profile';
 
 export default function Dashboard() {
 
@@ -77,6 +78,7 @@ export default function Dashboard() {
                   description="Welcome to the dashboard of the Que platform."
                   subPage1URL="dashboard"
                 />
+              <Profile />
                 {/* Heading section end */}
 
 

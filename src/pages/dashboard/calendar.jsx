@@ -1,6 +1,7 @@
 import Header from '@/components/molecules/HeaderMolecule'
 import NavbarMolecule from '@/components/molecules/NavbarMolecule'
 import SideNavbarMolecule from '@/components/molecules/SideNavbarMolecule'
+import CalenderMoleule from '@/components/molecules/CalenderMolecule'
 
 import { useState, useEffect } from 'react';
 
@@ -35,7 +36,7 @@ export default function Calender() {
 
                     <div className="m-0 w-full">
 
-                        Calender Page
+                        <CalenderMoleule/>
 
                     </div>
 

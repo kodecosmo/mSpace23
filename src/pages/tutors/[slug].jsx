@@ -10,7 +10,7 @@ export default function Tutors() {
       <NavbarMolecule />
       <main style={{ marginTop: "78px" }} className="w-full"></main>
       <TeacherProfile
-        teachername="Bonnie Green"
+        teachername={router.query.slug}
         teachernamedescription="This is the description about the teacher"
         subject="Chemistry"
         rating="5 out of 5"

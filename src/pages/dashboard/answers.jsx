@@ -2,8 +2,10 @@ import DashboardHeading from '@/components/molecules/DashboardHeadingMolecule';
 import Header from '@/components/molecules/HeaderMolecule'
 import NavbarMolecule from '@/components/molecules/NavbarMolecule'
 import SideNavbarMolecule from '@/components/molecules/SideNavbarMolecule'
+import FeedQuestion from '@/components/atoms/FeedQuestion';
 
 import { useState, useEffect } from 'react';
+import AnswerTileAtom from '@/components/atoms/AnswerTileAtom';
 
 export default function Answers() {
 
@@ -46,7 +48,7 @@ export default function Answers() {
                                     subPage2URL="answers"
                                 />
                                 {/* Heading section end */}
-
+                                <AnswerTileAtom/>
 
                             </div>
                         </div>

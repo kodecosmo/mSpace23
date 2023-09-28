@@ -20,8 +20,10 @@ import {
 
 import ProfileInfoCard from "@/components/molecules/ProfileInfoCard";
 import CalenderMolecule from "@/components/molecules/CalenderMolecule";
+import ScheduleAtom from "@/components/atoms/ScheduleAtom";
+import FeedQuestion from "@/components/atoms/FeedQuestion";
 
-const profile = () => {
+const Profile = () => {
   return (
     <>
       {/* Header */}
@@ -56,14 +58,7 @@ const profile = () => {
               <div className="w-96">
                 <Tabs value="app">
                   <TabsHeader>
-                    <Tab value="app">
-                      <FaHome className="-mt-1 mr-2 inline-block h-5 w-5" />
-                      App
-                    </Tab>
-                    <Tab value="message">
-                      <FaSnapchatGhost className="-mt-0.5 mr-2 inline-block h-5 w-5" />
-                      Message
-                    </Tab>
+                    
                     <Tab value="settings">
                       <FaTools className="-mt-1 mr-2 inline-block h-5 w-5" />
                       Settings
@@ -103,7 +98,7 @@ const profile = () => {
                 }}
               />
               <div className=" pl-6">
-                <CalenderMolecule />
+                <ScheduleAtom/>
               </div>
             </div>
           </div>
@@ -113,6 +108,33 @@ const profile = () => {
             <Typography variant="h6" color="blue-gray" className="mb-2">
               Answers
             </Typography>
+            <FeedQuestion
+              name="Kaviru"
+              uName="ksrx"
+              date="2"
+              questionTitle="How to patch KDE on FreeBSD"
+              questionDescription="Description DescriptionDescriptionDescriptionDescript ionDescriptionDescriptionDescri ptionDescriptionDescriptionDescription Description Description Description Description Description "
+              tag1="#Python"
+              tag2="#JavaScript"
+            />
+            <FeedQuestion
+              name="Kaviru"
+              uName="ksrx"
+              date="2"
+              questionTitle="How to patch KDE on FreeBSD"
+              questionDescription="Description DescriptionDescriptionDescriptionDescriptionDescript ionDescriptionDescriptionDescrip tionDescriptionDescription Description Description Description Description Description "
+              tag1="#Python"
+              tag2="#JavaScript"
+            />
+            <FeedQuestion
+              name="Kaviru"
+              uName="ksrx"
+              date="2"
+              questionTitle="How to patch KDE on FreeBSD"
+              questionDescription="Description DescriptionDescriptionDescriptionDescriptionDescri ptionDescriptionDescriptionDes criptionDescriptionDescription Description Description Description Description Description "
+              tag1="#Python"
+              tag2="#JavaScript"
+            />
             <Typography
               variant="small"
               className="font-normal text-blue-gray-500"
@@ -129,4 +151,4 @@ const profile = () => {
   );
 };
 
-export default profile;
+export default Profile;

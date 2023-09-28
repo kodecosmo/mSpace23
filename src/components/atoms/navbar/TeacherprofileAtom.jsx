@@ -17,8 +17,8 @@ export default function TeacherProfile(props) {
           <div className="md:flex justify-between items-center sm:flex-col md:flex-row">
             <div className="w-full md:basis-1/2">
               {/* Name goes here */}
-              <h5 className="text-text-color font-[600] text-[16px]">
-                Kaviru Happuarachchi
+              <h5 className="text-text-color font-[600] text-[16px] capitalize">
+                {props.teachername}
               </h5>
 
               {/* Description goes here */}
