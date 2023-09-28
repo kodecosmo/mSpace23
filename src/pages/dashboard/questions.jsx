@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import useSWR from 'swr';
 
 import OptionAtom from '@/components/atoms/modals/OptionAtom';
 import SelectAtom from '@/components/atoms/modals/SelectAtom';
@@ -39,7 +40,29 @@ export default function DashboardQuestions() {
 
     // -------------------------------------- modal code start --------------------------------------
 
-    const [selectedQuestion, setQuestion] = useState([]);
+    const [selectedQuestion, setQuestion] = useState({
+        id: null,
+        title: null,
+        slug: null,
+        body: null,
+        answers: null,
+        profile_id: null,
+        subject: {
+            id: null,
+            name: null,
+            slug: null,
+            description: null,
+            asset: {
+                id: null,
+                relative_path: null,
+                complete_path: null
+            },
+            created_at: null,
+            updated_at: null
+        },
+        created_at: null,
+        updated_at: null
+    });
 
     const selectQuestion = (question) => {
         setQuestion(question);
@@ -53,19 +76,53 @@ export default function DashboardQuestions() {
     // ------------------- update modal code start -------------------
     const updateModalId = "updateQuestionModal";
     const updateModalTitle = "Edit Question";
+    const updateModalButtonRef = useRef(null);
     // ------------------- update modal code end -------------------
 
     // ------------------- read modal code start -------------------
     const readModalId = "readQuestionModal";
-    const readModalTitle = "How to make a bulb like Thomas?";
+    const readModalTitle = "Question";
+    const readModalButtonRef = useRef(null);
     // ------------------- read modal code end -------------------
 
     // ------------------- delete modal code start -------------------
     const deleteModalId = "deleteQuestionModal";
+    const deleteModalButtonRef = useRef(null);
     // ------------------- delete modal code end -------------------
 
     // -------------------------------------- modal code end --------------------------------------
 
+
+    // -------------------------------------- load questions code start --------------------------------------
+
+    //Write a fetcher function to wrap the native fetch function and return the result of a call to url in json format
+    const fetcher = (url) => fetch(url).then((res) => res.json());
+
+    //Set up SWR to run the fetcher function when calling "/api/staticdata"
+    //There are 3 possible states: (1) loading when data is null (2) ready when the data is returned (3) error when there was an error fetching the data
+    const { data, error } = useSWR('/api/questions', fetcher);
+
+    let tableOutput;    
+
+    if (error) {
+        //Handle the error state
+        tableOutput = <div className="flex justify-center items-center p-4 text-sm text-gray-500">Failed to load</div>;
+    } else if (!data) {
+        //Handle the loading state
+        tableOutput = <div className="flex justify-center items-center p-4 text-sm text-gray-500">Loading...</div>;
+    } else {
+        // Loading done
+        tableOutput = <TableBodyMolecule
+            data={data}
+            selectedQuestion={selectQuestion}
+            updateModalButtonRef={updateModalButtonRef}
+            readModalButtonRef={readModalButtonRef}
+            deleteModalButtonRef={deleteModalButtonRef}
+        />;
+    }
+    //Handle the ready state and display the result contained in the data object mapped to the structure of the json file
+
+    // -------------------------------------- load questions code end --------------------------------------
 
     return (
         <>
@@ -103,8 +160,17 @@ export default function DashboardQuestions() {
                                         <div className="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">
 
                                             <TableHeadingMolecule createModalId={createModalId} />
+                                            
+                                            {tableOutput}
+                                            
+                                            {/* Update Modal Opening Button */}
+                                            <input ref={updateModalButtonRef} type="button" className="hidden" data-modal-target={updateModalId} data-modal-toggle={updateModalId} />
 
-                                            <TableBodyMolecule selectedQuestion={selectQuestion} updateModalId={updateModalId} readModalId={readModalId} deleteModalId={deleteModalId} />
+                                            {/* Read Modal Opening Button */}
+                                            <input ref={readModalButtonRef} type="button" className="hidden" data-modal-target={readModalId} data-modal-toggle={readModalId} />
+
+                                            {/* Delete Modal Opening Button */}
+                                            <input ref={deleteModalButtonRef} type="button" className="hidden" data-modal-target={deleteModalId} data-modal-toggle={deleteModalId} />
 
                                             <TablePaginationMolecule />
 
@@ -203,13 +269,13 @@ export default function DashboardQuestions() {
                                                     name="updateQuestionSubject"
                                                     id="updateQuestionSubject"
                                                     required={true}
-                                                    defaultValue=""
+                                                    defaultValue={selectedQuestion.subject.id}
                                                     options={<>
-                                                        <OptionAtom disabled={true} text="Select subject" />
-                                                        <OptionAtom value="1" text="Physics" />
-                                                        <OptionAtom value="2" text="Chemistry" />
-                                                        <OptionAtom value="3" text="Linerar Algebra" />
-                                                        <OptionAtom value="4" text="Botany" />
+                                                        <OptionAtom value="" disabled={true} text="Select subject" />
+                                                        <OptionAtom value={1} text="Physics" />
+                                                        <OptionAtom value={2} text="Chemistry" />
+                                                        <OptionAtom value={3} text="Linerar Algebra" />
+                                                        <OptionAtom value={4} text="Botany" />
                                                     </>}
                                                 />
 
@@ -238,11 +304,11 @@ export default function DashboardQuestions() {
                                 {/* Read Modal */}
                                 <ReadMolecule
                                     id={readModalId}
-                                    headerTitle={readModalTitle}
+                                    headerTitle={readModalTitle + " - " + selectedQuestion.title}
                                     fields={
                                         <dl>
-                                            <DataAtom title="Details" value="Standard glass ,3.8GHz 8-core 10th-generation Intel Core i7 processor, Turbo Boost up to 5.0GHz, 16GB 2666MHz DDR4 memory, Radeon Pro 5500 XT with 8GB of GDDR6 memory, 256GB SSD storage, Gigabit Ethernet, Magic Mouse 2, Magic Keyboard - US." />
-                                            <DataAtom title="Category" value="Electronics/PC" />
+                                            <DataAtom title="Category" value={selectedQuestion.subject.name} />
+                                            <DataAtom title="Body" value={selectedQuestion.body} />
                                         </dl>
                                     }
                                 />
@@ -250,7 +316,7 @@ export default function DashboardQuestions() {
 
                                 {/* Delete modal */}
                                 <DeleteMolecule deleteModalId={deleteModalId} />
-
+                                
                                 {/* ------------------------------------------------------------------------------ */}
 
                                 <DashboardFooterMolecule />

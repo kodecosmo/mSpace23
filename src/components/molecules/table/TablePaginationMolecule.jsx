@@ -8,12 +8,12 @@ export default function TablePaginationMolecule() {
         >
             <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
                 Showing
-                <span className="font-semibold text-gray-900 dark:text-white">
-                    1-10
+                <span className="font-semibold text-gray-900 dark:text-white mx-2">
+                    1-4
                 </span>
                 of
-                <span className="font-semibold text-gray-900 dark:text-white">
-                    1000
+                <span className="font-semibold text-gray-900 dark:text-white mx-2">
+                    4
                 </span>
             </span>
             <ul className="inline-flex items-stretch -space-x-px">
