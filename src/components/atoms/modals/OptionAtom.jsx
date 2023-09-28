@@ -1,6 +1,6 @@
-export default function OptionAtom({ value = "", text = "", selected = "false", disabled = "false" }) {
+export default function OptionAtom({ value = "", text = "", disabled = false }) {
     return (
-        <option selected={selected} disabled={disabled} value={value}>
+        <option disabled={disabled} value={value}>
             {text}
         </option>
     );

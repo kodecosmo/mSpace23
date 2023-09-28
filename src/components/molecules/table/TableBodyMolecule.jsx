@@ -58,7 +58,7 @@ function TableBodyMolecule({ selectedQuestion, updateModalId, readModalId, delet
             <TD value={question.title} slug={question.slug} type="main" />
             <TD value={question.subject.name} />
             <TD value={question.body} type="extended" />
-            <TD value={1} />
+            <TD value={question.answers} />
             <TD value={<ul className="py-1 text-sm inline-flex" aria-labelledby="apple-imac-27-dropdown-button">
                 <li>
                     <button onClick={() => selectedQuestion(question)} type="button" data-modal-target={updateModalId} data-modal-toggle={updateModalId} className="flex w-full items-center py-2 px-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-gray-700 dark:text-gray-200">

@@ -153,7 +153,7 @@ export default function DashboardQuestions() {
                                                     id="category"
                                                     required={true}
                                                     options={<>
-                                                        <OptionAtom selected={true} disabled={true} text="Select category" />
+                                                        <OptionAtom disabled={true} text="Select category" />
                                                         <OptionAtom value="TV" text="TV/Monitors" />
                                                         <OptionAtom value="PC" text="PC" />
                                                         <OptionAtom value="GA" text="Gaming/Console" />
@@ -203,7 +203,7 @@ export default function DashboardQuestions() {
                                                     name="updateQuestionSubject"
                                                     id="updateQuestionSubject"
                                                     required={true}
-                                                    //defaultValue={selectedQuestion.subject.id}
+                                                    defaultValue=""
                                                     options={<>
                                                         <OptionAtom disabled={true} text="Select subject" />
                                                         <OptionAtom value="1" text="Physics" />
