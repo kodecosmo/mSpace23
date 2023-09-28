@@ -18,12 +18,14 @@ export default function IntroMolecule() {
 
                         <div className="flex">
 
-                            <button type="button" className="focus:outline-none text-white bg-orange-400 hover:bg-orange-500 focus:ring-4 focus:ring-orange-300 rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-orange-900 font-semibold">Post a Question</button>
+                            <a className="ocus:outline-none text-white bg-orange-400 hover:bg-orange-500 focus:ring-4 focus:ring-orange-300 rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-orange-900 font-semibold flex items-center " href="/dashboard/post-question">
+                                <span>Post a question</span>
+                            </a>
 
-                            <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-semibold rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 flex justify-center items-center">
+                            <a href="/dashboard/questions" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-semibold rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 flex justify-center items-center">
                                 <span>My questions</span>
                                 <img className="overflow-hidden" alt="" fill={true} src="/arrow.svg" />
-                            </button>
+                            </a>
 
                         </div>
                     </div>

@@ -24,7 +24,7 @@ export default function Answers() {
     return (
         <>
 
-            <Header title="StudyMate" description="Welcome to StudyMate. Your online tutoring site." />
+            <Header title="Que" description="Welcome to Que. Your online tutoring site." />
 
             <NavbarMolecule type="dashboard" /> {/* `default` or `dashboard` */}
 

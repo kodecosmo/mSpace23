@@ -25,7 +25,7 @@ const contactus = () => {
               </div>
               <div className="inline-flex space-x-2 items-center">
                 <img src="" alt="" width={28} height={28} />
-                <span> contact@studymate.com </span>
+                <span> contact@Que.com </span>
               </div>
               <div className="inline-flex space-x-2 items-center">
                 <img src="" alt="location icon" width={28} height={28} />

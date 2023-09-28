@@ -1,6 +1,11 @@
+import { FooterMolecule } from "@/components/molecules/FooterMolecule";
+import NavbarMolecule from "@/components/molecules/NavbarMolecule";
+
 export default function ErrorPage() {
 
     return (
+        <>
+        <NavbarMolecule/>
         <section className="bg-white dark:bg-gray-900 flex h-screen">
             <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 m-auto">
                 <div className="mx-auto max-w-screen-sm text-center">
@@ -10,5 +15,7 @@ export default function ErrorPage() {
                 </div>
             </div>
         </section>
+        <FooterMolecule/>
+        </>
     );
 }

@@ -2,7 +2,7 @@
 
 import Head from 'next/head'
 
-export default function Tags({ title = "StudyMate", description = "Welcome to StudyMate. Your online tutoring site." }) {
+export default function Tags({ title = "Que", description = "Welcome to Que. Your online tutoring site." }) {
 
     return (
         <Head>
