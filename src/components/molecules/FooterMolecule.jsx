@@ -191,21 +191,21 @@ function DashboardFooterMolecule() {
     let year = d.getFullYear();
 
     return (
-        <footer class="w-full mt-6 p-4 px-4 lg:px-12 bg-gray-50 dark:bg-gray-900 md:flex md:items-center md:justify-between md:p-6 ">
-            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© {year} <a href="/" class="hover:underline">{appName}</a>. All Rights Reserved.
+        <footer className="w-full mt-6 p-4 px-4 lg:px-12 bg-gray-50 dark:bg-gray-900 md:flex md:items-center md:justify-between md:p-6 ">
+            <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© {year} <a href="/" className="hover:underline">{appName}</a>. All Rights Reserved.
             </span>
-            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+            <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
                 <li>
-                    <a href="/about-us" class="mr-4 hover:underline md:mr-6">About</a>
+                    <a href="/about-us" className="mr-4 hover:underline md:mr-6">About</a>
                 </li>
                 <li>
-                    <a href="/privacy-policy" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+                    <a href="/privacy-policy" className="mr-4 hover:underline md:mr-6">Privacy Policy</a>
                 </li>
                 <li>
-                    <a href="/terms-and-conditions" class="mr-4 hover:underline md:mr-6">Terms & Conditions</a>
+                    <a href="/terms-and-conditions" className="mr-4 hover:underline md:mr-6">Terms & Conditions</a>
                 </li>
                 <li>
-                    <a href="/contact-us" class="hover:underline">Contact</a>
+                    <a href="/contact-us" className="hover:underline">Contact</a>
                 </li>
             </ul>
         </footer>

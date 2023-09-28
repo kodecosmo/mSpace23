@@ -39,6 +39,12 @@ export default function DashboardQuestions() {
 
     // -------------------------------------- modal code start --------------------------------------
 
+    const [selectedQuestion, setQuestion] = useState([]);
+
+    const selectQuestion = (question) => {
+        setQuestion(question);
+    };
+
     // ------------------- create modal code start -------------------
     const createModalId = "createQuestionModal";
     const createModalTitle = "Add Question";
@@ -98,7 +104,7 @@ export default function DashboardQuestions() {
 
                                             <TableHeadingMolecule createModalId={createModalId} />
 
-                                            <TableBodyMolecule updateModalId={updateModalId} readModalId={readModalId} deleteModalId={deleteModalId} />
+                                            <TableBodyMolecule selectedQuestion={selectQuestion} updateModalId={updateModalId} readModalId={readModalId} deleteModalId={deleteModalId} />
 
                                             <TablePaginationMolecule />
 
@@ -184,63 +190,42 @@ export default function DashboardQuestions() {
 
                                                 <TextAtom
                                                     type="text"
-                                                    text="Name"
-                                                    name="name"
-                                                    id="name"
-                                                    placeholder="Ex. Apple iMac 27"
-                                                    defaultValue="iPad Air Gen 5th Wi-Fi"
-                                                    required={true}
-                                                />
-
-                                                <TextAtom
-                                                    type="text"
-                                                    text="Brand"
-                                                    name="brand"
-                                                    id="brand"
-                                                    placeholder="Ex. Apple"
-                                                    defaultValue="Google"
-                                                    required={true}
-                                                />
-
-                                                <TextAtom
-                                                    type="text"
-                                                    text="Price"
-                                                    name="price"
-                                                    id="price"
-                                                    placeholder="$..."
-                                                    defaultValue="399"
+                                                    text="Title"
+                                                    name="updateQuestionTitle"
+                                                    id="updateQuestionTitle"
+                                                    placeholder="Ex. What is schrodinger equation?"
+                                                    defaultValue={selectedQuestion.title}
                                                     required={true}
                                                 />
 
                                                 <SelectAtom
-                                                    text="Category"
-                                                    name="category"
-                                                    id="category"
+                                                    text="Subject"
+                                                    name="updateQuestionSubject"
+                                                    id="updateQuestionSubject"
                                                     required={true}
+                                                    //defaultValue={selectedQuestion.subject.id}
                                                     options={<>
-                                                        <OptionAtom selected={true} disabled={true} text="Select category" />
-                                                        <OptionAtom value="TV" text="TV/Monitors" />
-                                                        <OptionAtom value="PC" text="PC" />
-                                                        <OptionAtom value="GA" text="Gaming/Console" />
-                                                        <OptionAtom value="PH" text="Phones" />
+                                                        <OptionAtom disabled={true} text="Select subject" />
+                                                        <OptionAtom value="1" text="Physics" />
+                                                        <OptionAtom value="2" text="Chemistry" />
+                                                        <OptionAtom value="3" text="Linerar Algebra" />
+                                                        <OptionAtom value="4" text="Botany" />
                                                     </>}
                                                 />
 
 
                                                 <TextareaAtom
                                                     text="Description"
-                                                    name="description"
-                                                    id="description"
+                                                    name="updateQuestionDescription"
+                                                    id="updateQuestionDescription"
                                                     placeholder="Write a description..."
-                                                    defaultValue={
-                                                        "Standard glass, 3.8GHz 8-core 10th-generation Intel Core i7 processor, Turbo Boost up to 5.0GHz, 16GB 2666MHz DDR4 memory, Radeon Pro 5500 XT with 8GB of GDDR6 memory, 256GB SSD storage, Gigabit Ethernet, Magic Mouse 2, Magic Keyboard - US"
-                                                    }
+                                                    defaultValue={selectedQuestion.body}
                                                     rows={4}
                                                     required={true}
                                                 />
 
                                             </div>
-                                            <div class="flex items-center space-x-4">
+                                            <div className="flex items-center space-x-4">
                                                 <SubmitButtonAtom text="Update question" />
                                                 <DeleteButtonAtom text="Delete" />
                                             </div>
@@ -262,7 +247,7 @@ export default function DashboardQuestions() {
                                     }
                                 />
 
-                                
+
                                 {/* Delete modal */}
                                 <DeleteMolecule deleteModalId={deleteModalId} />
 

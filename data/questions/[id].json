@@ -28,12 +28,12 @@
         "body": "Newton's First Law of Motion, often referred to as the law of inertia, states that an object at rest will stay at rest, and an object in motion will stay in motion with the same speed and in the same direction unless acted upon by an external force. In simpler terms, it means that objects tend to maintain their state of motion unless a force is applied to change that state.",
         "profile_id": 2, 
         "subject": {
-            "id": 2,
+            "id": 1,
             "name": "Physics",
             "slug": "physics",
             "description": "Physics explores the fundamental laws of the universe, unraveling mysteries from particles to galaxies, shaping our world.",
             "asset": {
-                "id": 2,
+                "id": 1,
                 "relative_path": "public/Yvuewuy0nhU37BK1hTxWaepHdMvbyqHtxi7FzDrZ.jpg",
                 "complete_path": "http://example.com/assets/Yvuewuy0nhU37BK1hTxWaepHdMvbyqHtxi7FzDrZ.jpg"
             },
@@ -50,12 +50,12 @@
         "body": "Atoms are the basic units of matter, and they consist of three main components: protons, neutrons, and electrons. Protons carry a positive charge and are located in the nucleus at the center of the atom. Neutrons are also found in the nucleus and have no charge. Electrons orbit the nucleus in electron shells and carry a negative charge. The arrangement of these particles determines the chemical properties of an element.",
         "profile_id": 3, 
         "subject": {
-            "id": 3,
+            "id": 1,
             "name": "Physics",
             "slug": "physics",
             "description": "Physics explores the fundamental laws of the universe, unraveling mysteries from particles to galaxies, shaping our world.",
             "asset": {
-                "id": 3,
+                "id": 1,
                 "relative_path": "public/Yvuewuy0nhU37BK1hTxWaepHdMvbyqHtxi7FzDrZ.jpg",
                 "complete_path": "http://example.com/assets/Yvuewuy0nhU37BK1hTxWaepHdMvbyqHtxi7FzDrZ.jpg"
             },

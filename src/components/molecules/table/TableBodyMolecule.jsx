@@ -9,7 +9,7 @@ function TH({ heading }) {
     );
 }
 
-function TD({ value, type = "normal" }) {
+function TD({ value, slug, type = "normal" }) {
     if (type == "extended") {
         return (
             <th className="px-4 py-3 max-w-[12rem] truncate font-medium">
@@ -19,7 +19,7 @@ function TD({ value, type = "normal" }) {
     } else if (type == "main") {
         return (
             <th scope="row" className="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                {value}
+                <a href={"/questions/" + slug} className="hover:text-blue-600 hover:cursor-pointer" target="_blank">{value}</a>
             </th>
         );
     } else if (type == "action") {
@@ -38,7 +38,7 @@ function TD({ value, type = "normal" }) {
 
 }
 
-function TableBodyMolecule({ updateModalId, readModalId, deleteModalId }) {
+function TableBodyMolecule({ selectedQuestion, updateModalId, readModalId, deleteModalId }) {
         
     //Write a fetcher function to wrap the native fetch function and return the result of a call to url in json format
     const fetcher = (url) => fetch(url).then((res) => res.json());
@@ -53,15 +53,15 @@ function TableBodyMolecule({ updateModalId, readModalId, deleteModalId }) {
     if (!data) return <div>Loading...</div>;
     //Handle the ready state and display the result contained in the data object mapped to the structure of the json file
     
-    const listQuestions = data.map((question) =>
-        <tr className="border-b dark:border-gray-700">
-            <TD value={question.title} type="main" />
+    const listQuestions = data.map((question, i) =>
+        <tr className="border-b dark:border-gray-700" key={i}>
+            <TD value={question.title} slug={question.slug} type="main" />
             <TD value={question.subject.name} />
             <TD value={question.body} type="extended" />
             <TD value={1} />
             <TD value={<ul className="py-1 text-sm inline-flex" aria-labelledby="apple-imac-27-dropdown-button">
                 <li>
-                    <button type="button" data-modal-target={updateModalId} data-modal-toggle={updateModalId} className="flex w-full items-center py-2 px-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-gray-700 dark:text-gray-200">
+                    <button onClick={() => selectedQuestion(question)} type="button" data-modal-target={updateModalId} data-modal-toggle={updateModalId} className="flex w-full items-center py-2 px-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-gray-700 dark:text-gray-200">
                         <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z" /><path fillRule="evenodd" clipRule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" /></svg>
                         {/* Edit */}
                     </button>
