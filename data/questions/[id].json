@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "title": "Can someone explain me the latent heat of fusion?",
+        "slug": "can-someone-explain-me-the-latent-heat-of-fusion",
+        "body": "Latent heat of fusion, also known as enthalpy of fusion, is the amount of energy that must be supplied to a solid substance (typically in the form of heat) in order to trigger a change in its physical state and convert it into a liquid (when the pressure of the environment is kept constant). For example, the latent heat of fusion of one kilogram of water, which is the amount of heat energy that must be supplied to convert 1 kg of ice without changing the temperature of the environment (which is kept at zero degrees Celsius) is 333.55 kilojoules.",
+        "profile_id": 1,
+        "subject": {
+            "id": 1,
+            "name": "Physics",
+            "slug": "physics",
+            "description": "Physics explores the fundamental laws of the universe, unraveling mysteries from particles to galaxies, shaping our world.",
+            "asset": {
+                "id": 1,
+                "relative_path": "public/Yvuewuy0nhU37BK1hTxWaepHdMvbyqHtxi7FzDrZ.jpg",
+                "complete_path": "http://example.com/assets/Yvuewuy0nhU37BK1hTxWaepHdMvbyqHtxi7FzDrZ.jpg"
+            },
+            "created_at": "2023-08-28 18:08:14",
+            "updated_at": "2023-08-28 18:08:14"
+        },
+        "created_at": "2023-08-28 18:08:14",
+        "updated_at": "2023-08-28 18:08:14"
+    },
+    {
+        "id": 2,
+        "title": "What is Newton's First Law of Motion?",
+        "slug": "what-is-newtons-first-law-of-motion",
+        "body": "Newton's First Law of Motion, often referred to as the law of inertia, states that an object at rest will stay at rest, and an object in motion will stay in motion with the same speed and in the same direction unless acted upon by an external force. In simpler terms, it means that objects tend to maintain their state of motion unless a force is applied to change that state.",
+        "profile_id": 2, 
+        "subject": {
+            "id": 2,
+            "name": "Physics",
+            "slug": "physics",
+            "description": "Physics explores the fundamental laws of the universe, unraveling mysteries from particles to galaxies, shaping our world.",
+            "asset": {
+                "id": 2,
+                "relative_path": "public/Yvuewuy0nhU37BK1hTxWaepHdMvbyqHtxi7FzDrZ.jpg",
+                "complete_path": "http://example.com/assets/Yvuewuy0nhU37BK1hTxWaepHdMvbyqHtxi7FzDrZ.jpg"
+            },
+            "created_at": "2023-08-29 10:15:27",
+            "updated_at": "2023-08-29 10:15:27"
+        },
+        "created_at": "2023-08-29 10:15:27",
+        "updated_at": "2023-08-29 10:15:27"
+    },
+    {
+        "id": 3,
+        "title": "The Structure of the Atom Explained",
+        "slug": "the-structure-of-the-atom-explained",
+        "body": "Atoms are the basic units of matter, and they consist of three main components: protons, neutrons, and electrons. Protons carry a positive charge and are located in the nucleus at the center of the atom. Neutrons are also found in the nucleus and have no charge. Electrons orbit the nucleus in electron shells and carry a negative charge. The arrangement of these particles determines the chemical properties of an element.",
+        "profile_id": 3, 
+        "subject": {
+            "id": 3,
+            "name": "Physics",
+            "slug": "physics",
+            "description": "Physics explores the fundamental laws of the universe, unraveling mysteries from particles to galaxies, shaping our world.",
+            "asset": {
+                "id": 3,
+                "relative_path": "public/Yvuewuy0nhU37BK1hTxWaepHdMvbyqHtxi7FzDrZ.jpg",
+                "complete_path": "http://example.com/assets/Yvuewuy0nhU37BK1hTxWaepHdMvbyqHtxi7FzDrZ.jpg"
+            },
+            "created_at": "2023-08-30 14:42:19",
+            "updated_at": "2023-08-30 14:42:19"
+        },
+        "created_at": "2023-08-30 14:42:19",
+        "updated_at": "2023-08-30 14:42:19"
+    },
+    {
+        "id": 4,
+        "title": "The Importance of Photosynthesis in Plants",
+        "slug": "the-importance-of-photosynthesis-in-plants",
+        "body": "Photosynthesis is a vital process for plants as it allows them to convert light energy from the sun into chemical energy in the form of glucose. This energy is used for growth, reproduction, and overall survival. Additionally, photosynthesis releases oxygen into the atmosphere, which is essential for the respiration of many organisms, including humans.",
+        "profile_id": 4, 
+        "subject": {
+            "id": 4,
+            "name": "Botany",
+            "slug": "botany",
+            "description": "Botany is the scientific study of plants, including their structure, growth, and interactions with the environment.",
+            "asset": {
+                "id": 4,
+                "relative_path": "public/Yvuewuy0nhU37BK1hTxWaepHdMvbyqHtxi7FzDrZ.jpg",
+                "complete_path": "http://example.com/assets/Yvuewuy0nhU37BK1hTxWaepHdMvbyqHtxi7FzDrZ.jpg"
+            },
+            "created_at": "2023-08-31 09:57:45",
+            "updated_at": "2023-08-31 09:57:45"
+        },
+        "created_at": "2023-08-31 09:57:45",
+        "updated_at": "2023-08-31 09:57:45"
+    }
+]
