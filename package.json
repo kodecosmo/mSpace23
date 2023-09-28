@@ -9,8 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@material-tailwind/react": "^2.1.2",
     "@prisma/client": "^5.3.1",
     "autoprefixer": "^10.4.15",
+    "datejs": "^1.0.0-rc3",
+    "dayjs": "^1.11.10",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
     "flowbite": "^1.8.1",
