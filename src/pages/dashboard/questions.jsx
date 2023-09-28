@@ -16,6 +16,7 @@ import TableBodyMolecule from '@/components/molecules/table/TableBodyMolecule';
 import TablePaginationMolecule from '@/components/molecules/table/TablePaginationMolecule';
 import TableHeadingMolecule from '@/components/molecules/table/TableHeadingMolecule';
 import { DashboardFooterMolecule } from '@/components/molecules/FooterMolecule';
+import ReadMolecule from '@/components/molecules/modals/ReadMolecule';
 
 export default function DashboardQuestions() {
 
@@ -164,6 +165,82 @@ export default function DashboardQuestions() {
 
                                 {/* Update Modal */}
                                 <UpdateMolecule
+                                    id={updateModalId}
+                                    headerTitle={updateModalTitle}
+                                    fields={
+                                        <form action="#">
+                                            <div className="grid gap-4 mb-4 sm:grid-cols-2">
+
+                                                <TextAtom
+                                                    type="text"
+                                                    text="Name"
+                                                    name="name"
+                                                    id="name"
+                                                    placeholder="Ex. Apple iMac 27"
+                                                    defaultValue="iPad Air Gen 5th Wi-Fi"
+                                                    required={true}
+                                                />
+
+                                                <TextAtom
+                                                    type="text"
+                                                    text="Brand"
+                                                    name="brand"
+                                                    id="brand"
+                                                    placeholder="Ex. Apple"
+                                                    defaultValue="Google"
+                                                    required={true}
+                                                />
+
+                                                <TextAtom
+                                                    type="text"
+                                                    text="Price"
+                                                    name="price"
+                                                    id="price"
+                                                    placeholder="$..."
+                                                    defaultValue="399"
+                                                    required={true}
+                                                />
+
+                                                <SelectAtom
+                                                    text="Category"
+                                                    name="category"
+                                                    id="category"
+                                                    required={true}
+                                                    options={<>
+                                                        <OptionAtom selected={true} disabled={true} text="Select category" />
+                                                        <OptionAtom value="TV" text="TV/Monitors" />
+                                                        <OptionAtom value="PC" text="PC" />
+                                                        <OptionAtom value="GA" text="Gaming/Console" />
+                                                        <OptionAtom value="PH" text="Phones" />
+                                                    </>}
+                                                />
+
+
+                                                <TextareaAtom
+                                                    text="Description"
+                                                    name="description"
+                                                    id="description"
+                                                    placeholder="Write a description..."
+                                                    defaultValue={
+                                                        "Standard glass, 3.8GHz 8-core 10th-generation Intel Core i7 processor, Turbo Boost up to 5.0GHz, 16GB 2666MHz DDR4 memory, Radeon Pro 5500 XT with 8GB of GDDR6 memory, 256GB SSD storage, Gigabit Ethernet, Magic Mouse 2, Magic Keyboard - US"
+                                                    }
+                                                    rows={4}
+                                                    required={true}
+                                                />
+
+                                            </div>
+                                            <div class="flex items-center space-x-4">
+                                                <SubmitButtonAtom text="Update question" />
+                                                <DeleteButtonAtom text="Delete" />
+                                            </div>
+
+                                        </form>
+                                    }
+                                />
+
+
+                                {/* Read Modal */}
+                                <ReadMolecule
                                     id={updateModalId}
                                     headerTitle={updateModalTitle}
                                     fields={
