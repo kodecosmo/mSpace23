@@ -6,29 +6,89 @@ const landing = () => {
       {/* Subjects - need to do this again */}
       <section className="max-w-5xl px-5 mx-auto mt-16 md:mt-10 md:mb-24 text-center w-full flex flex-col items-start font-montserrat">
         <div className="grid grid-cols-6 grid-rows-2 items-stretch max-w-[550px] w-full self-center md:flex md:py-6 md:justify-between md:items-start md:max-w-[100%]">
-          <a href="/topics/mathematics/" className="flex flex-col items-center flex-1 border-r-[#ccc] border-r-[1px] py-2 px-[30px] gap-[2px] mt-5">
-            <img src="https://brilliant.org/site_media/version-1de7ac9e60/images/homepage/topic-math.png" alt="Math" width="132" height="132" loading="lazy" />
-            <h3 className=" text-base md:text-[18px] mb-auto font-semibold text-center "> Maths </h3>
+          <a
+            href="/topics/mathematics/"
+            className="flex flex-col items-center flex-1 border-r-[#ccc] border-r-[1px] py-2 px-[30px] gap-[2px] mt-5"
+          >
+            <img
+              src="https://brilliant.org/site_media/version-1de7ac9e60/images/homepage/topic-math.png"
+              alt="Math"
+              width="132"
+              height="132"
+              loading="lazy"
+            />
+            <h3 className=" text-base md:text-[18px] mb-auto font-semibold text-center ">
+              {" "}
+              Maths{" "}
+            </h3>
           </a>
 
-          <a href="/topics/physics/" className="flex flex-col items-center flex-1 border-r-[#ccc] border-r-[1px] py-2 px-[30px] gap-[2px] mt-5">
-            <img src="https://brilliant.org/site_media/version-32dd0ee41c/images/homepage/topic-data-analysis.png" alt="Math" width="132" height="132" loading="lazy" />
-            <h3 className=" text-base md:text-[18px] mb-auto font-semibold text-center "> Physics </h3>
+          <a
+            href="/topics/physics/"
+            className="flex flex-col items-center flex-1 border-r-[#ccc] border-r-[1px] py-2 px-[30px] gap-[2px] mt-5"
+          >
+            <img
+              src="https://brilliant.org/site_media/version-32dd0ee41c/images/homepage/topic-data-analysis.png"
+              alt="Math"
+              width="132"
+              height="132"
+              loading="lazy"
+            />
+            <h3 className=" text-base md:text-[18px] mb-auto font-semibold text-center ">
+              {" "}
+              Physics{" "}
+            </h3>
           </a>
 
-          <a href="/topics/chemistry/" className="flex flex-col items-center flex-1 border-r-[#ccc] border-r-[1px] py-2 px-[30px] gap-[2px] mt-5">
-            <img src="https://brilliant.org/site_media/version-affbf78367/images/homepage/topic-science-and-enginnering.png" alt="Math" width="132" height="132" loading="lazy" />
-            <h3 className=" text-base md:text-[18px] mb-auto font-semibold text-center "> Chemistry </h3>
+          <a
+            href="/topics/chemistry/"
+            className="flex flex-col items-center flex-1 border-r-[#ccc] border-r-[1px] py-2 px-[30px] gap-[2px] mt-5"
+          >
+            <img
+              src="https://brilliant.org/site_media/version-affbf78367/images/homepage/topic-science-and-enginnering.png"
+              alt="Math"
+              width="132"
+              height="132"
+              loading="lazy"
+            />
+            <h3 className=" text-base md:text-[18px] mb-auto font-semibold text-center ">
+              {" "}
+              Chemistry{" "}
+            </h3>
           </a>
 
-          <a href="/topics/biology/" className="flex flex-col items-center flex-1 border-r-[#ccc] border-r-[1px] py-2 px-[30px] gap-[2px] mt-5">
-            <img src="https://brilliant.org/site_media/version-9cddcd3333/images/homepage/topic-programming.png" alt="Math" width="132" height="132" loading="lazy" />
-            <h3 className=" text-base md:text-[18px] mb-auto font-semibold text-center "> Programming </h3>
+          <a
+            href="/topics/biology/"
+            className="flex flex-col items-center flex-1 border-r-[#ccc] border-r-[1px] py-2 px-[30px] gap-[2px] mt-5"
+          >
+            <img
+              src="https://brilliant.org/site_media/version-9cddcd3333/images/homepage/topic-programming.png"
+              alt="Math"
+              width="132"
+              height="132"
+              loading="lazy"
+            />
+            <h3 className=" text-base md:text-[18px] mb-auto font-semibold text-center ">
+              {" "}
+              Programming{" "}
+            </h3>
           </a>
 
-          <a href="/topics/computer-science/" className="flex flex-col items-center flex-1 border-r-[#ccc] border-r-[1px] py-2 px-[30px] gap-[2px] mt-5">
-            <img src="https://brilliant.org/site_media/version-0a482e698b/images/homepage/topic-computer-science.png" alt="Math" width="132" height="132" loading="lazy" />
-            <h3 className=" text-base md:text-[18px] mb-auto font-semibold text-center "> Computer Science </h3>
+          <a
+            href="/topics/computer-science/"
+            className="flex flex-col items-center flex-1 border-r-[#ccc] border-r-[1px] py-2 px-[30px] gap-[2px] mt-5"
+          >
+            <img
+              src="https://brilliant.org/site_media/version-0a482e698b/images/homepage/topic-computer-science.png"
+              alt="Math"
+              width="132"
+              height="132"
+              loading="lazy"
+            />
+            <h3 className=" text-base md:text-[18px] mb-auto font-semibold text-center ">
+              {" "}
+              Computer Science{" "}
+            </h3>
           </a>
         </div>
       </section>
@@ -132,12 +192,12 @@ const landing = () => {
         <div className="font-montserrat max-w-6xl px-5 mx-auto mt-32 text-center">
           <h2 className="text-4xl font-bold text-center mb-16">
             What others say about{" "}
-            <span className="text-primary"> StudyMate! </span>
+            <span className="text-primary-700"> StudyMate! </span>
           </h2>
 
           <div className="flex flex-col md:flex-row max-w-5xl mx-auto gap-8 group">
-            <div className="bg-primary/10 md:group-hover:blur-sm md:group-hover:hover:blur-none md:group-hover:scale-[0.85] md:transition duration-200 md:ease-in-out md:group-hover:hover:scale-100  cursor-pointer p-8 rounded-xl mix-blend-luminosity">
-              <img src="" alt="Person 01" className="h-20 mx-auto" />
+            <div className="bg-primary-700/10 md:group-hover:blur-sm md:group-hover:hover:blur-none md:group-hover:scale-[0.85] md:transition duration-200 md:ease-in-out md:group-hover:hover:scale-100  cursor-pointer p-8 rounded-xl">
+              <img src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Person 01" className=" h-32 w-32 mx-auto rounded-full" />
               <h4 className="uppercase text-xl font-bold">
                 Kaviru Hapuarachchi
               </h4>
@@ -153,8 +213,8 @@ const landing = () => {
               </button>
             </div>
 
-            <div className="bg-primary/10 md:group-hover:blur-sm md:group-hover:hover:blur-none md:group-hover:scale-[0.85] md:transition duration-200 md:ease-in-out md:group-hover:hover:scale-100  cursor-pointer p-8 rounded-xl mix-blend-luminosity">
-              <img src="" alt="Person 02" className="h-20 mx-auto" />
+            <div className="bg-primary-700/10 md:group-hover:blur-sm md:group-hover:hover:blur-none md:group-hover:scale-[0.85] md:transition duration-200 md:ease-in-out md:group-hover:hover:scale-100  cursor-pointer p-8 rounded-xl">
+              <img src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Person 02" className="h-32 w-32 mx-auto rounded-full" />
               <h4 className="uppercase text-xl font-bold">
                 Ridmaka Hapuarachchi
               </h4>
@@ -170,8 +230,8 @@ const landing = () => {
               </button>
             </div>
 
-            <div className="bg-primary/10 md:group-hover:blur-sm md:group-hover:hover:blur-none md:group-hover:scale-[0.85] md:transition duration-200 md:ease-in-out md:group-hover:hover:scale-100  cursor-pointer p-8 rounded-xl mix-blend-luminosity">
-              <img src="" alt="Person 03" className="h-20 mx-auto" />
+            <div className="bg-primary-700/10 md:group-hover:blur-sm md:group-hover:hover:blur-none md:group-hover:scale-[0.85] md:transition duration-200 md:ease-in-out md:group-hover:hover:scale-100  cursor-pointer p-8 rounded-xl">
+              <img src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Person 03" className="h-32 w-32 mx-auto rounded-full" />
               <h4 className="uppercase text-xl font-bold">Name GoesHere</h4>
 
               <p className="text-sm leading-7 my-3 font-light">
