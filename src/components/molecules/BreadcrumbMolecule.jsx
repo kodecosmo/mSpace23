@@ -1,6 +1,6 @@
 import BreadcrumbLinkAtom from "@/components/atoms/navbar/BreadcrumbLinkAtom";
 
-function MainBreadcrumb({ subPage1URL = "", subPage2URL = "" }) {
+function MainBreadcrumb({ subPage1URL = "", subPage2URL = null, subPage3URL = null}) {
 
     const appUrl = process.env.NEXT_PUBLIC_APP_URL;
 
@@ -19,6 +19,8 @@ function MainBreadcrumb({ subPage1URL = "", subPage2URL = "" }) {
                 {(subPage1URL == "") ? "" : <SubMainBreadcrumb subPage={subPage1URL} />}
 
                 {((subPage1URL == "dashboard") && subPage2URL != "") ? <SubDashboardBreadcrumb subPage={subPage2URL} /> : ""}
+
+                {((subPage1URL == "dashboard") && subPage2URL == "wallet" && subPage3URL != "") ? <SubMiniDashboardBreadcrumb subPage={subPage3URL} /> : ""}
 
             </ol>
         </nav>
@@ -120,8 +122,54 @@ function SubDashboardBreadcrumb({ subPage }) {
                             <BreadcrumbLinkAtom href="/dashboard/questions" name="questions" />
                             <BreadcrumbLinkAtom href="/dashboard/answers" name="answers" />
                             <BreadcrumbLinkAtom href="/dashboard/tutoring-sessions" name="tutoring-sessions" />
-                            <BreadcrumbLinkAtom href="/dashboard/transactions" name="transactions" />
-                            <BreadcrumbLinkAtom href="/dashboard/packages" name="packages" />
+                            <BreadcrumbLinkAtom clickable={false} name="wallet" />
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </>
+    );
+}
+
+function SubMiniDashboardBreadcrumb({ subPage }) {
+
+    return (
+        <>
+            <span className="mx-2 text-gray-400">/</span>
+            <li aria-current="page">
+                <div className="flex items-center">
+                    <button
+                        id="dropdownSubPage2"
+                        data-dropdown-toggle="dropdown-sub-page-3"
+                        className="inline-flex items-center px-3 py-2 text-sm font-normal text-center text-gray-800 bg-transparent rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-900 dark:hover:bg-gray-800 dark:text-white dark:focus:ring-gray-700"
+                    >
+                        {subPage}
+                        <svg
+                            className="w-2.5 h-2.5 ml-2.5"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 10 6"
+                        >
+                            <path
+                                stroke="currentColor"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="m1 1 4 4 4-4"
+                            />
+                        </svg>
+                    </button>
+                    <div
+                        id="dropdown-sub-page-3"
+                        className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+                    >
+                        <ul
+                            className="py-2 text-sm text-gray-600 dark:text-gray-200"
+                            aria-labelledby="dropdownDefault"
+                        >
+                            <BreadcrumbLinkAtom href="/dashboard/wallet/package" name="package" />
+                            <BreadcrumbLinkAtom href="/dashboard/wallet/transactions" name="transactions" />
                         </ul>
                     </div>
                 </div>

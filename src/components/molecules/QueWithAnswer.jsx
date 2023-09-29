@@ -184,7 +184,7 @@ const QueWithAnswer = () => {
                 </div>
 
                 <p className=" text-sm text-blue-500 pr-5">
-                  KHapu
+                  Kaviru Hapuarachchi
                   <span className=" text-slate-400">Answered 4 mins ago</span>
                 </p>
               </div>

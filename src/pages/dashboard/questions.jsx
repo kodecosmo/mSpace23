@@ -68,6 +68,12 @@ export default function DashboardQuestions() {
         setQuestion(question);
     };
 
+    // ------------------- request session modal code start -------------------
+    const requestSessionModalId = "requestSessionModal";
+    const requestSessionModalTitle = "Request a Session";
+    const requestSessionModalButtonRef = useRef(null);
+    // ------------------- request session modal code end -------------------
+
     // ------------------- update modal code start -------------------
     const updateModalId = "updateQuestionModal";
     const updateModalTitle = "Edit Question";
@@ -110,6 +116,7 @@ export default function DashboardQuestions() {
         tableOutput = <TableBodyMolecule
             data={data}
             selectedQuestion={selectQuestion}
+            requestSessionModalButtonRef={requestSessionModalButtonRef}
             updateModalButtonRef={updateModalButtonRef}
             readModalButtonRef={readModalButtonRef}
             deleteModalButtonRef={deleteModalButtonRef}
@@ -157,7 +164,10 @@ export default function DashboardQuestions() {
                                             <TableHeadingMolecule />
                                             
                                             {tableOutput}
-                                            
+
+                                            {/* Request Session Modal Opening Button */}
+                                            <input ref={requestSessionModalButtonRef} type="button" className="hidden" data-modal-target={requestSessionModalId} data-modal-toggle={requestSessionModalId} />
+
                                             {/* Update Modal Opening Button */}
                                             <input ref={updateModalButtonRef} type="button" className="hidden" data-modal-target={updateModalId} data-modal-toggle={updateModalId} />
 
@@ -173,10 +183,10 @@ export default function DashboardQuestions() {
                                     </div>
                                 </section>
 
-                                {/* Create Modal 
+                                {/* Request Session Modal */}
                                 <CreateMolecule
-                                    id={createModalId}
-                                    headerTitle={createModalTitle}
+                                    id={requestSessionModalId}
+                                    headerTitle={requestSessionModalTitle}
                                     fields={
                                         <form action="#">
                                             <div className="grid gap-4 mb-4 sm:grid-cols-2">
@@ -238,7 +248,7 @@ export default function DashboardQuestions() {
 
                                         </form>
                                     }
-                                />*/}
+                                />
 
 
                                 {/* Update Modal */}
@@ -311,6 +321,9 @@ export default function DashboardQuestions() {
 
                                 {/* Delete modal */}
                                 <DeleteMolecule deleteModalId={deleteModalId} />
+
+                                {/* modal-backdrop */}
+                                <input type="hidden" className="bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-40" />
                                 
                                 {/* ------------------------------------------------------------------------------ */}
 
