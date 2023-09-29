@@ -7,7 +7,7 @@ const feed = () => {
     <>
       <NavbarMolecule />
 
-      <div className="mt-20 w-full md:w-1/2 justify-center mx-auto flex flex-col gap-11">
+      <div className="mt-32 mb-14 w-full md:w-1/2 justify-center mx-auto flex flex-col gap-11">
         <FeedQuestion
           name="Kaviru"
           uName="ksrx"

@@ -28,13 +28,38 @@ function FooterMolecule() {
                             </h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
-                                    <a href="https://flowbite.com/" className="hover:underline">
-                                        Flowbite
+                                    <a href="/search" className="hover:underline">
+                                        Search
+                                    </a>
+                                </li>
+                                <li className="mb-4">
+                                    <a href="/feed" className="hover:underline">
+                                        Feed
+                                    </a>
+                                </li>
+                                <li className="mb-4">
+                                    <a href="/packages" className="hover:underline">
+                                        Packages
+                                    </a>
+                                </li>
+                                <li className="mb-4">
+                                    <a href="/services" className="hover:underline">
+                                        Services
+                                    </a>
+                                </li>
+                                <li className="mb-4">
+                                    <a href="/faq" className="hover:underline">
+                                        Faq
+                                    </a>
+                                </li>
+                                <li className="mb-4">
+                                    <a href="/about-us" className="hover:underline">
+                                        About Us
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://tailwindcss.com/" className="hover:underline">
-                                        Tailwind CSS
+                                    <a href="/contact-us" className="hover:underline">
+                                        Contact Us
                                     </a>
                                 </li>
                             </ul>
