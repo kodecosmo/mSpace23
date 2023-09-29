@@ -68,11 +68,6 @@ export default function DashboardQuestions() {
         setQuestion(question);
     };
 
-    // ------------------- create modal code start -------------------
-    const createModalId = "createQuestionModal";
-    const createModalTitle = "Add Question";
-    // ------------------- create modal code end -------------------
-
     // ------------------- update modal code start -------------------
     const updateModalId = "updateQuestionModal";
     const updateModalTitle = "Edit Question";
@@ -159,7 +154,7 @@ export default function DashboardQuestions() {
                                         {/* Start coding here */}
                                         <div className="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">
 
-                                            <TableHeadingMolecule createModalId={createModalId} />
+                                            <TableHeadingMolecule />
                                             
                                             {tableOutput}
                                             
@@ -178,7 +173,7 @@ export default function DashboardQuestions() {
                                     </div>
                                 </section>
 
-                                {/* Create Modal */}
+                                {/* Create Modal 
                                 <CreateMolecule
                                     id={createModalId}
                                     headerTitle={createModalTitle}
@@ -243,7 +238,7 @@ export default function DashboardQuestions() {
 
                                         </form>
                                     }
-                                />
+                                />*/}
 
 
                                 {/* Update Modal */}
