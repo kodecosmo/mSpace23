@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Card,
-  CardBody,
   Avatar,
   Typography,
   Tabs,
@@ -10,18 +9,16 @@ import {
 } from "@material-tailwind/react";
 import {
   FaFacebook,
-  FaHome,
   FaInstagram,
   FaPencilAlt,
-  FaSnapchatGhost,
   FaTools,
   FaTwitter,
 } from "react-icons/fa";
 
 import ProfileInfoCard from "@/components/molecules/ProfileInfoCard";
-import CalenderMolecule from "@/components/molecules/CalenderMolecule";
 import ScheduleAtom from "@/components/atoms/ScheduleAtom";
 import FeedQuestion from "@/components/atoms/FeedQuestion";
+import QueWithAnswer from "@/components/molecules/QueWithAnswer";
 
 const Profile = () => {
   return (
@@ -97,7 +94,7 @@ const Profile = () => {
                   ),
                 }}
               />
-              <div className=" pl-6">
+              <div className=" -ml-5 md:pl-6 mt-20 md:mt-0">
                 <ScheduleAtom/>
               </div>
             </div>
@@ -108,15 +105,7 @@ const Profile = () => {
             <Typography variant="h6" color="blue-gray" className="mb-2">
               Answers
             </Typography>
-            <FeedQuestion
-              name="Kaviru"
-              uName="ksrx"
-              date="2"
-              questionTitle="How to patch KDE on FreeBSD"
-              questionDescription="Description DescriptionDescriptionDescriptionDescript ionDescriptionDescriptionDescri ptionDescriptionDescriptionDescription Description Description Description Description Description "
-              tag1="#Python"
-              tag2="#JavaScript"
-            />
+            <QueWithAnswer />
             <FeedQuestion
               name="Kaviru"
               uName="ksrx"
@@ -135,6 +124,8 @@ const Profile = () => {
               tag1="#Python"
               tag2="#JavaScript"
             />
+            <QueWithAnswer />
+
             <Typography
               variant="small"
               className="font-normal text-blue-gray-500"
