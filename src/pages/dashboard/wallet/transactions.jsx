@@ -1,4 +1,5 @@
 import DashboardHeading from '@/components/molecules/DashboardHeadingMolecule';
+import { DashboardFooterMolecule } from '@/components/molecules/FooterMolecule';
 import Header from '@/components/molecules/HeaderMolecule'
 import NavbarMolecule from '@/components/molecules/NavbarMolecule'
 import SideNavbarMolecule from '@/components/molecules/SideNavbarMolecule'
@@ -49,6 +50,7 @@ export default function Transactions() {
                                 {/* Heading section end */}
 
 
+                                <DashboardFooterMolecule />
                             </div>
                         </div>
                     </div>

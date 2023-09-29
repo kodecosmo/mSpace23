@@ -12,6 +12,7 @@ import Teacher from "@/components/molecules/steps/Teacher";
 import Final from "@/components/molecules/steps/Final";
 import DashboardHeading from '@/components/molecules/DashboardHeadingMolecule';
 import Profile from '../profile';
+import { DashboardFooterMolecule } from '@/components/molecules/FooterMolecule';
 
 export default function Dashboard() {
 
@@ -58,7 +59,7 @@ export default function Dashboard() {
   return (
     <>
 
-      <Header title="Que" description="Welcome to Que. Your online tutoring site." />
+      <Header title="Dashboard - Que" description="Welcome to Que. Your online tutoring site." />
 
       <NavbarMolecule type="dashboard" /> {/* `default` or `dashboard` */}
 
@@ -78,9 +79,11 @@ export default function Dashboard() {
                   description="Welcome to the dashboard of the Que platform."
                   subPage1URL="dashboard"
                 />
-              <Profile />
                 {/* Heading section end */}
 
+                <Profile />
+
+                <DashboardFooterMolecule />
 
               </div>
             </div>

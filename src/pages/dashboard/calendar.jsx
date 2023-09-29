@@ -4,6 +4,8 @@ import SideNavbarMolecule from '@/components/molecules/SideNavbarMolecule'
 import CalenderMoleule from '@/components/molecules/CalenderMolecule'
 
 import { useState, useEffect } from 'react';
+import DashboardHeading from '@/components/molecules/DashboardHeadingMolecule';
+import { DashboardFooterMolecule } from '@/components/molecules/FooterMolecule';
 
 export default function Calender() {
 
@@ -35,9 +37,24 @@ export default function Calender() {
                     <SideNavbarMolecule windowHeight={windowHeight} />
 
                     <div className="m-0 w-full">
+                        <div className="grid grid-cols-4">
+                            <div className="flex flex-col justify-center align-top mt-4 pb-2 col-span-4">
 
-                        <CalenderMoleule/>
+                                {/* Heading section start */}
+                                <DashboardHeading
+                                    heading="Calendar"
+                                    description="Customize your online sessions using the calendar."
+                                    subPage1URL="dashboard"
+                                    subPage2URL="calendar"
+                                />
+                                {/* Heading section end */}
 
+                                <CalenderMoleule />
+
+                                <DashboardFooterMolecule />
+
+                            </div>
+                        </div>
                     </div>
 
                 </div>

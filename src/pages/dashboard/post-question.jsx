@@ -11,6 +11,7 @@ import Question from "@/components/molecules/steps/Question";
 import Teacher from "@/components/molecules/steps/Teacher";
 import Final from "@/components/molecules/steps/Final";
 import DashboardHeading from '@/components/molecules/DashboardHeadingMolecule';
+import { DashboardFooterMolecule } from '@/components/molecules/FooterMolecule';
 
 export default function Dashboard() {
 
@@ -71,7 +72,7 @@ export default function Dashboard() {
           <div className="m-0 w-full">
             <div className="grid grid-cols-4">
 
-              <div className="flex flex-col justify-center mt-4 pb-2 col-span-4  lg:col-span-3">
+              <div className="flex flex-col justify-center mt-4 pb-2 col-span-4 mr-6">
 
                 {/* Heading section start */}
                 <DashboardHeading
@@ -83,7 +84,7 @@ export default function Dashboard() {
                 {/* Heading section end */}
 
                 {/* Stepper */}
-                <div className="container mt-5 horizontal">
+                <div className="mt-5 horizontal">
                   <Stepper steps={steps} currentStep={currentStep} />
 
                   {/* Display Component */}
@@ -111,14 +112,12 @@ export default function Dashboard() {
                 )}
               </div>
 
-              <div className="col-span-4  lg:col-span-1">
-
-                side details
-
-
-              </div>
+              {/* <div className="col-span-4  lg:col-span-1">side details</div> */}
 
             </div>
+
+            <DashboardFooterMolecule />
+
           </div>
 
         </div>

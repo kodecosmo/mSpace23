@@ -20,7 +20,7 @@ const Final = () => {
         <div className="mt-3 text-xl font-semibold uppercase text-green-500">
           Congratulations!
         </div>
-        <div className="text-lg font-semibold text-gray-500 text-center">
+        <div className="text-sm font-semibold text-gray-500 text-center">
           You have successfully posted your question. You will be notified once a teacher has answered your question.
         </div>
 

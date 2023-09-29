@@ -6,6 +6,7 @@ import FeedQuestion from '@/components/atoms/FeedQuestion';
 
 import { useState, useEffect } from 'react';
 import AnswerTileAtom from '@/components/atoms/AnswerTileAtom';
+import { DashboardFooterMolecule } from '@/components/molecules/FooterMolecule';
 
 export default function Answers() {
 
@@ -48,8 +49,10 @@ export default function Answers() {
                                     subPage2URL="answers"
                                 />
                                 {/* Heading section end */}
+
                                 <AnswerTileAtom/>
 
+                                <DashboardFooterMolecule />
                             </div>
                         </div>
                     </div>

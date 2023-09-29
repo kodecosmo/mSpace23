@@ -103,7 +103,7 @@ export default function DashboardQuestions() {
     //There are 3 possible states: (1) loading when data is null (2) ready when the data is returned (3) error when there was an error fetching the data
     const { data, error } = useSWR('/api/questions', fetcher);
 
-    let tableOutput;    
+    let tableOutput;
 
     if (error) {
         //Handle the error state
@@ -162,7 +162,7 @@ export default function DashboardQuestions() {
                                         <div className="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">
 
                                             <TableHeadingMolecule />
-                                            
+
                                             {tableOutput}
 
                                             {/* Request Session Modal Opening Button */}
@@ -324,7 +324,7 @@ export default function DashboardQuestions() {
 
                                 {/* modal-backdrop */}
                                 <input type="hidden" className="bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-40" />
-                                
+
                                 {/* ------------------------------------------------------------------------------ */}
 
                                 <DashboardFooterMolecule />
