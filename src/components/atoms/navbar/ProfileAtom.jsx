@@ -1,6 +1,14 @@
-export default function ProfileAtom() {
-    return (
-        <div className="flex items-center md:order-2">
+export default function ProfileAtom({ type = "default"}) {
+
+    let output;
+
+    if (type != "dashboard") {
+
+        output = <a href="/login"><button type="button" class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 ml-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Log in</button></a>;
+
+    }else{
+
+        output = <>
             <button type="button" className="flex mx-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom" >
                 <span className="sr-only">Open user menu</span>
                 <img className="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="user photo" />
@@ -33,6 +41,13 @@ export default function ProfileAtom() {
                     </li>
                 </ul>
             </div>
+        </>;
+        
+    }
+
+    return (
+        <div className="flex items-center md:order-2">
+            {output}
         </div>
 
     )
