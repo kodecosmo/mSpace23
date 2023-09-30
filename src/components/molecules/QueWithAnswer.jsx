@@ -7,7 +7,6 @@ import SubmitButtonAtom from "@/components/atoms/modals/SubmitButtonAtom";
 import OptionAtom from "@/components/atoms/modals/OptionAtom";
 
 const QueWithAnswer = () => {
-
   // ------------------- request session modal code start -------------------
   const requestSessionModalId = "requestSessionModal";
   const requestSessionModalTitle = "Request a Session";
@@ -15,7 +14,6 @@ const QueWithAnswer = () => {
 
   return (
     <>
-
       <section className="All-3-ans flex flex-col items-start mx-auto max-w-6xl w-full justify-center gap-12 py-10">
         <div className="One-ans overflow-hidden flex flex-col justify-start items-start w-full max-w-4xl mx-auto rounded-md">
           <div className="flex flex-col items-start gap-3 border rounded-xl border-text-color w-full">
@@ -36,9 +34,9 @@ const QueWithAnswer = () => {
 
               <p className="text-sm pr-8">
                 I have two screens the first of login and the second shows the
-                user information. On the login screen I keep the user_id value in
-                user.defaults and when I go to the second screen I use that value
-                to ...
+                user information. On the login screen I keep the user_id value
+                in user.defaults and when I go to the second screen I use that
+                value to ...
               </p>
 
               <div className="flex items-center justify-between w-full">
@@ -53,12 +51,19 @@ const QueWithAnswer = () => {
 
                 <div className="flex items-center gap-2">
                   <div>
-                    <img src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="profile pic" className=" w-4 h-4" />
+                    <img
+                      src="https://flowbite.com/docs/images/people/profile-picture-3.jpg"
+                      alt="profile pic"
+                      className=" w-4 h-4"
+                    />
                   </div>
 
                   <p className=" text-sm text-text-color pr-9">
                     BlackNight23
-                    <span className=" text-slate-400"> modified 21 mins ago</span>
+                    <span className=" text-slate-400">
+                      {" "}
+                      modified 21 mins ago
+                    </span>
                   </p>
                 </div>
               </div>
@@ -111,8 +116,8 @@ const QueWithAnswer = () => {
                 <p className="text-sm">
                   You are the operator of a junction and you hear a Git branch
                   coming. You have no idea which way it is supposed to go. You
-                  stop the train to ask the driver which direction they want. And
-                  then you set the switch appropriately...
+                  stop the train to ask the driver which direction they want.
+                  And then you set the switch appropriately...
                 </p>
               </div>
 
@@ -120,12 +125,19 @@ const QueWithAnswer = () => {
                 <p className="text-sm text-blue-500">View full answer</p>
                 <div className="flex items-center gap-[6px]">
                   <div>
-                    <img src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="profile pic" className=" w-4 h-4" />
+                    <img
+                      src="https://flowbite.com/docs/images/people/profile-picture-3.jpg"
+                      alt="profile pic"
+                      className=" w-4 h-4"
+                    />
                   </div>
 
                   <p className=" text-sm text-blue-500 pr-5">
                     Shakthi Abesingha
-                    <span className=" text-slate-400"> Answered 4 mins ago</span>
+                    <span className=" text-slate-400">
+                      {" "}
+                      Answered 4 mins ago
+                    </span>
                   </p>
                 </div>
               </div>
@@ -133,7 +145,7 @@ const QueWithAnswer = () => {
             <div className="flex justify-center items-center">
               <button
                 data-modal-target={requestSessionModalId}
-                data-modal-toggle={requestSessionModalId} 
+                data-modal-toggle={requestSessionModalId}
                 className="bg-primary-700 rounded-lg p-2 text-white font-medium text-sm hover:bg-text-color transition duration-200 ease-in-out"
               >
                 Request a Session
@@ -186,8 +198,8 @@ const QueWithAnswer = () => {
                 <p className="text-sm">
                   You are the operator of a junction and you hear a Git branch
                   coming. You have no idea which way it is supposed to go. You
-                  stop the train to ask the driver which direction they want. And
-                  then you set the switch appropriately...
+                  stop the train to ask the driver which direction they want.
+                  And then you set the switch appropriately...
                 </p>
               </div>
 
@@ -195,7 +207,11 @@ const QueWithAnswer = () => {
                 <p className="text-sm text-blue-500">View full answer</p>
                 <div className="flex items-center gap-[6px]">
                   <div>
-                    <img src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="profile pic" className=" w-4 h-4" />
+                    <img
+                      src="https://flowbite.com/docs/images/people/profile-picture-3.jpg"
+                      alt="profile pic"
+                      className=" w-4 h-4"
+                    />
                   </div>
 
                   <p className=" text-sm text-blue-500 pr-5">
@@ -209,19 +225,17 @@ const QueWithAnswer = () => {
             <div className="flex justify-center items-center">
               <button
                 data-modal-target={requestSessionModalId}
-                data-modal-toggle={requestSessionModalId} 
+                data-modal-toggle={requestSessionModalId}
                 className="bg-primary-700 rounded-lg p-2 text-white font-medium text-sm hover:bg-text-color transition duration-200 ease-in-out"
               >
                 Request a Session
               </button>
             </div>
           </div>
-
         </div>
       </section>
 
       <section>
-
         {/* Request Session Modal */}
         <CreateMolecule
           id={requestSessionModalId}
@@ -229,10 +243,9 @@ const QueWithAnswer = () => {
           fields={
             <form action="#">
               <div className="grid gap-4 mb-4 sm:grid-cols-2">
-
                 <TextAtom
                   type="text"
-                  text="Name"
+                  text="Student Name"
                   name="name"
                   id="name"
                   placeholder="Type product name"
@@ -241,7 +254,7 @@ const QueWithAnswer = () => {
 
                 <TextAtom
                   type="text"
-                  text="Brand"
+                  text="Question ID"
                   name="brand"
                   id="brand"
                   placeholder="Product brand"
@@ -250,46 +263,37 @@ const QueWithAnswer = () => {
 
                 <TextAtom
                   type="text"
-                  text="Price"
+                  text="Date"
                   name="price"
                   id="price"
-                  placeholder="$..."
+                  placeholder="dd/mm/yyyy"
                   required={true}
                 />
 
-                <SelectAtom
-                  text="Category"
-                  name="category"
-                  id="category"
+                <TextAtom
+                  type="text"
+                  text="Time"
+                  name="price"
+                  id="price"
+                  placeholder="hh:mm"
                   required={true}
-                  options={<>
-                    <OptionAtom disabled={true} text="Select category" />
-                    <OptionAtom value="TV" text="TV/Monitors" />
-                    <OptionAtom value="PC" text="PC" />
-                    <OptionAtom value="GA" text="Gaming/Console" />
-                    <OptionAtom value="PH" text="Phones" />
-                  </>}
                 />
-
 
                 <TextareaAtom
-                  text="Description"
+                  text="Small description"
                   name="description"
                   id="description"
-                  placeholder="Write product description here"
+                  placeholder="Write what you want to ask..."
                   rows={4}
                   required={true}
                 />
-
               </div>
 
-              <SubmitButtonAtom text="Add new Request" />
-
+              <SubmitButtonAtom text="Schedule session" />
             </form>
           }
         />
       </section>
-
     </>
   );
 };
