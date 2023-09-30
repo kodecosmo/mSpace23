@@ -58,7 +58,7 @@ export default function NavbarMolecule({type = "default"}) {
                         </svg>
                     </button>
 
-                    {(isLogged == true ? <ProfileAtom /> : "")}
+                    {(isLogged == true ? <ProfileAtom type={type} /> : "")}
 
                 </div>
 
