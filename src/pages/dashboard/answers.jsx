@@ -5,8 +5,8 @@ import SideNavbarMolecule from '@/components/molecules/SideNavbarMolecule'
 import FeedQuestion from '@/components/atoms/FeedQuestion';
 
 import { useState, useEffect } from 'react';
-import AnswerTileAtom from '@/components/atoms/AnswerTileAtom';
 import { DashboardFooterMolecule } from '@/components/molecules/FooterMolecule';
+import QueWithAnswer from '@/components/molecules/QueWithAnswer';
 
 export default function Answers() {
 
@@ -50,7 +50,7 @@ export default function Answers() {
                                 />
                                 {/* Heading section end */}
 
-                                <AnswerTileAtom/>
+                                <QueWithAnswer/>
 
                                 <DashboardFooterMolecule />
                             </div>
