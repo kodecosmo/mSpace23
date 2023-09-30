@@ -11,7 +11,7 @@ import Question from "@/components/molecules/steps/Question";
 import Teacher from "@/components/molecules/steps/Teacher";
 import Final from "@/components/molecules/steps/Final";
 import DashboardHeading from '@/components/molecules/DashboardHeadingMolecule';
-import Profile from '../profile';
+import Profile from '@/pages/profile';
 import { DashboardFooterMolecule } from '@/components/molecules/FooterMolecule';
 
 export default function Dashboard() {
