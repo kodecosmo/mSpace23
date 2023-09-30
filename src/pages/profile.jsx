@@ -24,7 +24,7 @@ import NavbarMolecule from "@/components/molecules/NavbarMolecule";
 const Profile = () => {
   return (
     <>
-    <NavbarMolecule />
+
       {/* Header */}
       <div className="relative mt-8 h-72 top-[100px] w-full overflow-hidden rounded-xl bg-[url(https://images.unsplash.com/photo-1531512073830-ba890ca4eba2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80)] bg-cover	bg-center">
         <div className="absolute inset-0 h-full w-full bg-blue-500/50" />
@@ -57,7 +57,7 @@ const Profile = () => {
               <div className="w-96">
                 <Tabs value="app">
                   <TabsHeader>
-                    
+
                     <Tab value="settings">
                       <FaTools className="-mt-1 mr-2 inline-block h-5 w-5" />
                       Settings
@@ -97,7 +97,7 @@ const Profile = () => {
                 }}
               />
               <div className=" -ml-5 md:pl-6 mt-20 md:mt-0">
-                <ScheduleAtom/>
+                <ScheduleAtom />
               </div>
             </div>
           </div>
