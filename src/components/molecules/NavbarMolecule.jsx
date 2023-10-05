@@ -28,11 +28,11 @@ export default function NavbarMolecule({type = "default"}) {
     });
 
     return (
-        <nav ref={ref} id="nav" className={(type == "dashboard") ? "bg-white dark:bg-gray-900 fixed top-0 w-full z-50" : "bg-white border-b border-b-gray-100 dark:bg-gray-900 fixed top-0 w-full z-50"}>
-            <div className={(type == "dashboard") ? "max-w-screen-xl flex flex-wrap md:flex-nowrap items-center justify-between mx-auto p-4" : "max-w-screen-xl flex flex-wrap md:flex-nowrap items-center justify-between mx-auto p-4"}>
+        <nav ref={ref} id="nav" className={(type == "dashboard") ? "bg-white dark:bg-gray-900 fixed top-0 w-full z-30 border-b border-gray-200 border-solid" : "bg-white border-b border-b-gray-100 dark:bg-gray-900 fixed top-0 w-full z-30"}>
+            <div className={(type == "dashboard") ? "max-w-screen-2xl flex flex-wrap md:flex-nowrap items-center justify-between mx-auto p-4" : "max-w-screen-xl flex flex-wrap md:flex-nowrap items-center justify-between mx-auto p-4"}>
 
                 <a href="/" className={(type == "dashboard") ? "max-w-[18rem] nav-brand flex items-center md:w-[-webkit-fill-available]" : "nav-brand flex items-center"}>
-                    <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="Flowbite Logo" />
+                    <img src="/favicon.svg" className="h-8 mr-3" alt="Flowbite Logo" />
                     <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                         {appName}
                     </span>
@@ -58,7 +58,7 @@ export default function NavbarMolecule({type = "default"}) {
                         </svg>
                     </button>
 
-                    {(isLogged == true ? <ProfileAtom /> : "")}
+                    {(isLogged == true ? <ProfileAtom type={type} /> : "")}
 
                 </div>
 

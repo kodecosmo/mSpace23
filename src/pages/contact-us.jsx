@@ -1,7 +1,7 @@
 import React from "react";
 
 import NavbarMolecule from "@/components/molecules/NavbarMolecule";
-import FooterMolecule from "@/components/molecules/FooterMolecule";
+import { FooterMolecule } from "@/components/molecules/FooterMolecule";
 
 const contactus = () => {
   return (
@@ -25,7 +25,7 @@ const contactus = () => {
               </div>
               <div className="inline-flex space-x-2 items-center">
                 <img src="" alt="" width={28} height={28} />
-                <span> contact@studymate.com </span>
+                <span> contact@Que.com </span>
               </div>
               <div className="inline-flex space-x-2 items-center">
                 <img src="" alt="location icon" width={28} height={28} />
@@ -79,7 +79,7 @@ const contactus = () => {
                   </textarea>
                 </div>
 
-                <button className="inline-block self-end bg-primary text-white font-bold rounded-lg px-6 py-2 uppercase text-sm"> Send Message </button>
+                <button className="inline-block self-end bg-primary-700 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm"> Send Message </button>
               </form>
             </div>
           </div>

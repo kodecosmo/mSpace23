@@ -1,0 +1,94 @@
+[
+    {
+        "id": 1,
+        "title": "Can someone explain me the latent heat of fusion?",
+        "slug": "can-someone-explain-me-the-latent-heat-of-fusion",
+        "body": "Could you kindly provide me with more information about the latent heat of fusion, including its applications and significance in various fields? Additionally, I'd like to understand if there are any specific aspects or concepts related to latent heat of fusion that you find particularly confusing or would like to delve deeper into for a comprehensive explanation.",
+        "answers": 1,
+        "profile_id": 1,
+        "subject": {
+            "id": 1,
+            "name": "Physics",
+            "slug": "physics",
+            "description": "Physics explores the fundamental laws of the universe, unraveling mysteries from particles to galaxies, shaping our world.",
+            "asset": {
+                "id": 1,
+                "relative_path": "public/Yvuewuy0nhU37BK1hTxWaepHdMvbyqHtxi7FzDrZ.jpg",
+                "complete_path": "http://example.com/assets/Yvuewuy0nhU37BK1hTxWaepHdMvbyqHtxi7FzDrZ.jpg"
+            },
+            "created_at": "2023-08-28 18:08:14",
+            "updated_at": "2023-08-28 18:08:14"
+        },
+        "created_at": "2023-08-28 18:08:14",
+        "updated_at": "2023-08-28 18:08:14"
+    },
+    {
+        "id": 2,
+        "title": "What is Newton's First Law of Motion?",
+        "slug": "what-is-newtons-first-law-of-motion",
+        "body": "What is Newton's First Law of Motion, and how did Sir Isaac Newton's groundbreaking work in the 17th century revolutionize our understanding of the fundamental principles governing the behavior of objects in motion, leading to the development of classical mechanics and laying the foundation for modern physics?",
+        "answers": 0,
+        "profile_id": 2,
+        "subject": {
+            "id": 1,
+            "name": "Physics",
+            "slug": "physics",
+            "description": "Physics explores the fundamental laws of the universe, unraveling mysteries from particles to galaxies, shaping our world.",
+            "asset": {
+                "id": 1,
+                "relative_path": "public/Yvuewuy0nhU37BK1hTxWaepHdMvbyqHtxi7FzDrZ.jpg",
+                "complete_path": "http://example.com/assets/Yvuewuy0nhU37BK1hTxWaepHdMvbyqHtxi7FzDrZ.jpg"
+            },
+            "created_at": "2023-08-29 10:15:27",
+            "updated_at": "2023-08-29 10:15:27"
+        },
+        "created_at": "2023-08-29 10:15:27",
+        "updated_at": "2023-08-29 10:15:27"
+    },
+    {
+        "id": 3,
+        "title": "The Structure of the Atom Explained",
+        "slug": "the-structure-of-the-atom-explained",
+        "body": "Could you provide a detailed explanation of the fundamental components and organization of atoms, as well as their interactions and significance in the realm of chemistry and physics, shedding light on their historical development and the contributions of notable scientists to our understanding of atomic structure?",
+        "answers": 0,
+        "profile_id": 3,
+        "subject": {
+            "id": 1,
+            "name": "Physics",
+            "slug": "physics",
+            "description": "Physics explores the fundamental laws of the universe, unraveling mysteries from particles to galaxies, shaping our world.",
+            "asset": {
+                "id": 1,
+                "relative_path": "public/Yvuewuy0nhU37BK1hTxWaepHdMvbyqHtxi7FzDrZ.jpg",
+                "complete_path": "http://example.com/assets/Yvuewuy0nhU37BK1hTxWaepHdMvbyqHtxi7FzDrZ.jpg"
+            },
+            "created_at": "2023-08-30 14:42:19",
+            "updated_at": "2023-08-30 14:42:19"
+        },
+        "created_at": "2023-08-30 14:42:19",
+        "updated_at": "2023-08-30 14:42:19"
+    },
+    {
+        "id": 4,
+        "title": "The Importance of Photosynthesis in Plants",
+        "slug": "the-importance-of-photosynthesis-in-plants",
+        "body": "What is the significance of photosynthesis in plants, and how does this intricate biological process enable them to convert light energy into chemical energy, ultimately sustaining life on Earth? Furthermore, could you explore the evolutionary history of photosynthesis, its adaptations in various plant species, and the ecological implications of this fundamental mechanism in the broader context of ecosystems and global carbon cycling?",
+        "answers": 0,
+        "profile_id": 4, 
+        "subject": {
+            "id": 4,
+            "name": "Botany",
+            "slug": "botany",
+            "description": "Botany is the scientific study of plants, including their structure, growth, and interactions with the environment.",
+            "asset": {
+                "id": 4,
+                "relative_path": "public/Yvuewuy0nhU37BK1hTxWaepHdMvbyqHtxi7FzDrZ.jpg",
+                "complete_path": "http://example.com/assets/Yvuewuy0nhU37BK1hTxWaepHdMvbyqHtxi7FzDrZ.jpg"
+            },
+            "created_at": "2023-08-31 09:57:45",
+            "updated_at": "2023-08-31 09:57:45"
+        },
+        "created_at": "2023-08-31 09:57:45",
+        "updated_at": "2023-08-31 09:57:45"
+    }
+]

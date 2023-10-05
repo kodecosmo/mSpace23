@@ -50,3 +50,56 @@ export const classes = [
     },
     
 ];
+
+
+/* pricing plans - students */
+export const pricingPlans = [
+    {
+      title: 'Basic',
+      price: 1299,
+      currency: 'LKR',
+      frequency: 'One time',
+      description: 'This is a good starting porint to explore QUE. You can get all the nessesory features with this plan.',
+      features: [
+        '2h of sessions',
+        '5 questions',
+      ],
+      cta: 'Get Started',
+      mostPopular: false,
+    },
+
+    {
+      title: 'Full-time',
+      price: 4999,
+      currency: 'LKR',
+      frequency: '/month',
+      description: 'Get the full Que Experience with the Full-Time package. Full-time users get answers 2x fater than basic users',
+      features: [
+        '10h of sessions',
+        '30 questions',
+        'Smart keyword search',
+        'AI answer generation',
+        'High visibility questions',
+      ],
+      cta: 'Get Started',
+      mostPopular: true,
+    },
+
+    {
+      title: 'Student',
+      price: 0,
+      currency: 'LKR',
+      frequency: '/Verification',
+      description: 'Get the full Que Experience without paying a rupee. Only for school students',
+      features: [
+        'No free sessions',
+        '30 questions',
+        'Smart keyword search',
+        'AI answer generation',
+        'High visibility questions',
+      ],
+      cta: 'Verify',
+      mostPopular: false,
+    },
+
+]

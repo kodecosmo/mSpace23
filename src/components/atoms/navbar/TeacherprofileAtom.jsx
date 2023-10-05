@@ -1,72 +1,361 @@
-import { Card, Rating } from 'flowbite-react';
+import {
+  AiFillStar,
+  AiOutlineStar,
+  AiFillLinkedin,
+  AiFillInstagram,
+  AiFillFacebook,
+} from "react-icons/ai";
+
+import { FaCircle, FaEllipsisV } from "react-icons/fa";
+
 export default function TeacherProfile(props) {
-    return (
+  return (
+    <>
+      {/* Hero section */}
+      <section className="pt-0 mb-4">
+        <div className="container px-5 pt-14">
+          <div className="md:flex justify-between items-center sm:flex-col md:flex-row">
+            <div className="w-full md:basis-1/2">
+              {/* Name goes here */}
+              <h5 className="text-text-color font-[600] text-[16px] capitalize">
+                {props.teachername}
+              </h5>
 
-        <Card>
+              {/* Description goes here */}
+              <h1 className="text-text-color font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5">
+                I'm an IS undergraduate at <br />
+                <span className="text-primary"> UCSC </span>
+              </h1>
 
-            <div className="flex flex-col items-center pb-10">
-                <img
-                    alt={props.teachername}
-                    className="mb-3 rounded-full shadow-lg"
-                    height="96"
-                    src="https://flowbite.com/docs/images/people/profile-picture-3.jpg"
-                    width="96"
-                />
-                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                    {props.teachername}
-                </h5>
-                <span className="text-sm text-gray-500 dark:text-gray-400">
-                    {props.subject}
+              <div className="flex items-center gap-6 mt-7">
+                <a href="#">
+                  <button className="bg-primary-700 text-white font-[500] flex items-center gap-2 hover:bg-text-color ease-in duration-300 py-2 rounded-xl px-4">
+                    Request Session
+                  </button>
+                </a>
+                <a
+                  href="#"
+                  className="text-text-color font-[600] text-[16px] border-b border-solid border-text-color"
+                >
+                  My Answers
+                </a>
+              </div>
+
+              <div className="flex items-center gap-9 mt-14">
+                <span className="text-text-color text-[15px] font-[600]">
+                  Follow me:
+                </span>
+                <span>
+                  <a
+                    href="#linkedin"
+                    className="text-text-color text-[18px] font-[600]"
+                  >
+                    <AiFillLinkedin className="h-7 w-7 hover:text-[#0072b1]" />
+                  </a>
                 </span>
 
-                <h5 className="mb-3 text-xl font-medium text-gray-900 dark:text-white">
-                    {props.teachernamedescription}
-                </h5>
+                <span>
+                  <a
+                    href="#instagram"
+                    className="text-text-color text-[18px] font-[600]"
+                  >
+                    <AiFillInstagram className="h-7 w-7 hover:text-[#d6249f]" />
+                  </a>
+                </span>
 
-                <Rating className="mb-5" >
-                    <Rating.Star />
-                    <Rating.Star />
-                    <Rating.Star />
-                    <Rating.Star />
-                    <Rating.Star filled={false} />
-                    <p className="ml-5 text-sm font-medium text-gray-500 dark:text-gray-400" >
-                        {props.rating}
-                    </p>
-                </Rating>
-
-                <button type="button" class="mb-5 text-white bg-[#3b5998] hover:bg-[#3b5998]/90 focus:ring-6 focus:outline-none focus:ring-[#3b5998]/50 font-small rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
-                    <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
-                        <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd" />
-                    </svg>
-                    Facebook
-                </button>
-                <button type="button" class="text-white bg-[#1da1f2] hover:bg-[#1da1f2]/90 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2">
-                    <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
-                        <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd" />
-                    </svg>
-                    Twitter
-                </button>
-                <div className="mt-4 flex space-x-3 lg:mt-6">
-                    <a
-                        className="inline-flex items-center rounded-lg bg-orange-400 px-4 py-2 text-center text-sm font-medium text-white hover:bg-orange-700 focus:outline-none focus:ring-4 focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-cyan-700 dark:focus:ring-orange-800"
-                        href="#"
-                    >
-                        <p>
-                            Follow
-                        </p>
-                    </a>
-                    <a
-                        className="inline-flex items-center rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-                        href="#"
-                    >
-                        <p>
-                            Ask a Question
-                        </p>
-                    </a>
-                </div>
+                <span>
+                  <a
+                    href="#facebook"
+                    className="text-text-color text-[18px] font-[600]"
+                  >
+                    <AiFillFacebook className="h-7 w-7 hover:text-[#4267B2]" />
+                  </a>
+                </span>
+              </div>
             </div>
-        </Card>
-    )
+            <div className="basis-1/3 mt-10 sm:mt-0">
+              <figure className="flex items-center justify-center">
+                <img
+                  src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt="profile"
+                  className="w-[300px] h-[300px] object-cover rounded-full"
+                />
+              </figure>
+            </div>
+
+            <div className="md:basis-1/5 flex justify-between text-center mt-10 flex-wrap gap-3 md:mt-0 md:flex-col md:justify-end md:text-end">
+              <div className="mb-10">
+                <h2 className="text-text-color font-[700] text-[32px]">
+                  Level 01
+                </h2>
+                <h4 className="text-text-color font-[600] text-[18px]">
+                  Teacher
+                </h4>
+              </div>
+
+              <div className="mb-10">
+                <h2 className="text-text-color font-[700] text-[32px]">123</h2>
+                <h4 className="text-text-color font-[600] text-[18px]">
+                  Answers on platform
+                </h4>
+              </div>
+
+              <div className="mb-10">
+                <h2 className="text-text-color font-[700] text-[32px]">
+                  5.0 star
+                </h2>
+                <h4 className="text-text-color font-[600] text-[18px]">
+                  Student Reviews
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About teacher */}
+      <section className="flex justify-center items-center flex-col w-full max-w-5xl mx-auto">
+        <div className="tracking-[1px] my-[30px] py-[10px] px-5 flex flex-col justify-center items-center">
+          <span className="text-text-color font-[300] text-md tracking-[2px] uppercase">
+            INTRODUCTION
+          </span>
+          <h1 className="text-text-color font-[700] text-[32px]">About me</h1>
+        </div>
+
+        <div className="max-w-5xl flex flex-row flex-wrap justify-center items-center">
+          <div className="w-full md:w-1/2">
+            {/* Content goes here */}
+            <p className="text-center md:text-left">
+              I am a software engineering undergraduate at University of Colombo
+              School of Computing. I have a passion for teaching and I have been
+              teaching for the past 3 years. I have been teaching students for
+              the past 3 years and I have been able to help them achieve their
+              goals. I have been teaching students for the past 3 years and I
+              have been able to help them achieve their goals.
+            </p>
+          </div>
+          <div className="w-full md:w-1/2 flex justify-center items-center mt-5 md:mt-0">
+            {/* Video goes here */}
+            <video
+              width="500px"
+              height="500px"
+              controls="controls"
+              className="rounded-xl"
+            >
+              <source
+                src="https://pixabay.com/videos/the-lessons-are-over-teacher-folder-11862/"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+      </section>
+
+      {/* Answered Questions */}
+      <section className="flex justify-center items-center flex-col w-full max-w-5xl mx-auto">
+        <div className="tracking-[1px] my-[30px] py-[10px] px-5 flex flex-col justify-center items-center">
+          <span className="text-text-color font-[300] text-md tracking-[2px] uppercase">
+            ON QUESTIONWISE
+          </span>
+          <h1 className="text-text-color font-[700] text-[32px]">My work</h1>
+        </div>
+
+        <div className="w-full md:w-2/3">
+
+          {/* card for questions */}
+          <div className="px-5 py-5 rounded-lg shadow-[2px_2px_30px_rgba(0,0,0,0.1)]">
+            <div className="flex justify-between items-cente ">
+              <div className="flex gap-4 justify-center items-center">
+                <div className="">
+                  <img
+                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80"
+                    alt="student"
+                    className="w-12 h-12 object-cover object-center rounded-full"
+                  />
+                </div>
+                <div>
+                  <div>Kaviru Happuarachchi</div>
+                  <div className="flex justify-start items-center gap-2">
+                    <div>@ksrx</div>
+                    <div>
+                      <FaCircle fill="#444444" className="h-1 w-1 opacity-40" />
+                    </div>
+                    <div className="opacity-40 text-sm">2 days ago</div>
+                  </div>
+                </div>
+              </div>
+              <div className="hidden">
+                <FaEllipsisV fill="#444444" />
+              </div>
+            </div>
+            <div>
+              <div className="flex flex-col mt-5 mb-5">
+                <h2 className="font-bold">How to patch KDE on FreeBSD?</h2>
+                <p className="mt-5">
+                  How to patch KDE on FreeBSD? How to patch KDE on FreeBSD? How
+                  to patch KDE on FreeBSD? How to patch KDE on FreeBSD? How to
+                  patch KDE on FreeBSD? How to patch KDE on FreeBSD? How to
+                  patch KDE on FreeBSD? How to patch KDE on FreeBSD? How to
+                  patch KDE on
+                </p>
+              </div>
+
+              <div className="mb-5">
+                Enter the video/ image or code snippet here
+              </div>
+
+              <div className="mb-5">Enter the code snippet here</div>
+            </div>
+
+            <div className="flex justify-between items-center mx-5">
+              <div className="flex gap-1 flex-wrap">
+                <button className="bg-[#4584b6] text-white rounded-lg px-3 py-1 text-xs">
+                  #Python
+                </button>
+                <button className="bg-[#ffde57] text-text-color rounded-lg px-3 py-1 text-xs">
+                  #JavaScript
+                </button>
+              </div>
+              <div>
+                <button className="bg-primary-700 text-white font-[500] flex items-center gap-2 hover:bg-text-color ease-in duration-300 py-2 rounded-xl px-4">
+                  View Answer
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Rating */}
+      <section className="flex justify-center items-center flex-col w-full max-w-5xl mx-auto">
+        <div className="tracking-[1px] my-[30px] py-[10px] px-5 flex flex-col justify-center items-center">
+          <span className="text-text-color font-[300] text-md tracking-[2px] uppercase">
+            Ratings & Reviews
+          </span>
+          <h1 className="text-text-color font-[700] text-[32px]">
+            Students Says
+          </h1>
+        </div>
+
+        <div className="flex justify-center items-center flex-wrap">
+          {/* Review 01 */}
+          <div className="flex justify-center items-center flex-wrap md:w-[50%] w-full">
+            <div className="width-[500px] shadow-[2px_2px_30px_rgba(0,0,0,0.1)] bg-white p-5 m-4 cursor-pointer hover:scale-110 transition duration-200 ease-in-out">
+              <div className="flex justify-between items-center mb-5">
+                <div className="flex items-center">
+                  <div className=" w-[50px] h-[50px] rounded-[50%] overflow-hidden mr-3">
+                    <img
+                      src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                      alt="person"
+                      className="w-full h-full object-cover object-center"
+                    />
+                  </div>
+
+                  <div className="flex flex-col">
+                    <h4 className="text-text-color text-[1.1rem] leading-[0.5px] mb-1">
+                      Kaviru Happuarachchi
+                    </h4>
+                    <span className="text-[#979797] text-[0.8rem]">@ksrx</span>
+                  </div>
+                </div>
+
+                <div className="text-[#f9d71c] flex">
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiOutlineStar />
+                </div>
+              </div>
+
+              <div className="client-comment">
+                <p className="text-[0.9rem] text-text-color">
+                  The review goes here. The review goes here. The review goes.
+                  The review goes. The review goes. The review goes. The review
+                  goes here. the review giebs here
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Review 02 */}
+          <div className="flex justify-center items-center flex-wrap md:w-[50%] w-full">
+            <div className="width-[500px] shadow-[2px_2px_30px_rgba(0,0,0,0.1)] bg-white p-5 m-4 cursor-pointer">
+              <div className="flex justify-between items-center mb-5">
+                <div className="flex items-center">
+                  <div className=" w-[50px] h-[50px] rounded-[50%] overflow-hidden mr-3">
+                    <img
+                      src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                      alt="person"
+                      className="w-full h-full object-cover object-center"
+                    />
+                  </div>
+
+                  <div className="flex flex-col">
+                    <h4 className="text-text-color text-[1.1rem] leading-[0.5px] mb-1">
+                      Kaviru Happuarachchi
+                    </h4>
+                    <span className="text-[#979797] text-[0.8rem]">@ksrx</span>
+                  </div>
+                </div>
+
+                <div className="text-[#f9d71c] flex">
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiOutlineStar />
+                </div>
+              </div>
+
+              <div className="client-comment">
+                <p className="text-[0.9rem] text-text-color">
+                  The review goes here. The review goes here. The review goes.
+                  The review goes. The review goes. The review goes. The review
+                  goes here. the review giebs here
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Review 03 */}
+          <div className="flex justify-center items-center flex-wrap md:w-[50%] w-full">
+            <div className="width-[500px] shadow-[2px_2px_30px_rgba(0,0,0,0.1)] bg-white p-5 m-4 cursor-pointer">
+              <div className="flex justify-between items-center mb-5">
+                <div className="flex items-center">
+                  <div className=" w-[50px] h-[50px] rounded-[50%] overflow-hidden mr-3">
+                    <img
+                      src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                      alt="person"
+                      className="w-full h-full object-cover object-center"
+                    />
+                  </div>
+
+                  <div className="flex flex-col">
+                    <h4 className="text-text-color text-[1.1rem] leading-[0.5px] mb-1">
+                      Kaviru Happuarachchi
+                    </h4>
+                    <span className="text-[#979797] text-[0.8rem]">@ksrx</span>
+                  </div>
+                </div>
+
+                <div className="text-[#f9d71c] flex">
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiOutlineStar />
+                </div>
+              </div>
+
+              <div className="client-comment">
+                <p className="text-[0.9rem] text-text-color">
+                  The review goes here. The review goes here. The review goes.
+                  The review goes. The review goes. The review goes. The review
+                  goes here. the review giebs here
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
-
-

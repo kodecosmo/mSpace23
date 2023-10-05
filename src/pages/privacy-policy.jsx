@@ -1,4 +1,4 @@
-import FooterMolecule from "@/components/molecules/FooterMolecule";
+import { FooterMolecule } from "@/components/molecules/FooterMolecule";
 import NavbarMolecule from "@/components/molecules/NavbarMolecule";
 import React from "react";
 
@@ -29,7 +29,7 @@ const privacypolicy = () => {
               <p className="mb-4">
                 This Privacy Policy applies only to our online activities and is
                 valid for visitors to our website with regards to the
-                information that they shared and/or collect in StudyMate. This
+                information that they shared and/or collect in Que. This
                 policy is not applicable to any information collected offline or
                 via channels other than this website.
               </p>
@@ -86,32 +86,32 @@ const privacypolicy = () => {
               <p className="mb-4">
                 We use the information we collect in various ways, including to:
               </p>
-              <ul class="list-disc list-inside mb-4 ml-0 md:ml-6">
-                <li class="mb-2">Provide, operate, and maintain our website</li>
-                <li class="mb-2">
+              <ul className="list-disc list-inside mb-4 ml-0 md:ml-6">
+                <li className="mb-2">Provide, operate, and maintain our website</li>
+                <li className="mb-2">
                   Improve, personalize, and expand our website
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   Understand and analyze how you use our website
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   Develop new products, services, features, and functionality
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   Communicate with you, either directly or through one of our
                   partners, including for customer service, to provide you with
                   updates and other information relating to the website, and for
                   marketing and promotional purposes
                 </li>
-                <li class="mb-2">Send you emails</li>
-                <li class="mb-2">Find and prevent fraud</li>
+                <li className="mb-2">Send you emails</li>
+                <li className="mb-2">Find and prevent fraud</li>
               </ul>
 
               <h2 className="text-xl font-bold tracking-normal text-slate-900 sm:text-2xl mt-9 mb-4">
                 Log Files
               </h2>
               <p className="mb-4">
-                StudyMate follows a standard procedure of using log files. These
+                Que follows a standard procedure of using log files. These
                 files log visitors when they visit websites. All hosting
                 companies do this and a part of hosting services' analytics. The
                 information collected by log files include internet protocol
@@ -127,7 +127,7 @@ const privacypolicy = () => {
                 Cookies and Web Beacons
               </h2>
               <p>
-                Like any other website, StudyMate uses "cookies". These cookies
+                Like any other website, Que uses "cookies". These cookies
                 are used to store information including visitors' preferences,
                 and the pages on the website that the visitor accessed or
                 visited. The information is used to optimize the users'
@@ -157,12 +157,12 @@ const privacypolicy = () => {
               </h2>
               <p className="mb-4">
                 You may consult this list to find the Privacy Policy for each of
-                the advertising partners of StudyMate.
+                the advertising partners of Que.
               </p>
               <p className="mb-4">
                 Third-party ad servers or ad networks uses technologies like
                 cookies, JavaScript, or Web Beacons that are used in their
-                respective advertisements and links that appear on StudyMate,
+                respective advertisements and links that appear on Que,
                 which are sent directly to users' browser. They automatically
                 receive your IP address when this occurs. These technologies are
                 used to measure the effectiveness of their advertising campaigns
@@ -170,7 +170,7 @@ const privacypolicy = () => {
                 websites that you visit.
               </p>
               <p className="mb-4">
-                Note that StudyMate has no access to or control over these
+                Note that Que has no access to or control over these
                 cookies that are used by third-party advertisers.
               </p>
 
@@ -178,7 +178,7 @@ const privacypolicy = () => {
                 Third Party Privacy Policies
               </h2>
               <p className="mb-4">
-                StudyMate's Privacy Policy does not apply to other advertisers
+                Que's Privacy Policy does not apply to other advertisers
                 or websites. Thus, we are advising you to consult the respective
                 Privacy Policies of these third-party ad servers for more
                 detailed information. It may include their practices and
@@ -270,7 +270,7 @@ const privacypolicy = () => {
                 activity.
               </p>
               <p className="mb-4">
-                StudyMate does not knowingly collect any Personal Identifiable
+                Que does not knowingly collect any Personal Identifiable
                 Information from children under the age of 13. If you think that
                 your child provided this kind of information on our website, we
                 strongly encourage you to contact us immediately and we will do

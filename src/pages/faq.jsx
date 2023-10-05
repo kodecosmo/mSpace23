@@ -8,6 +8,7 @@ const faq = () => {
   return (
     <>
       <NavbarMolecule />
+
       <section className="font-sans antialiased text-gray-600 min-h-full flex flex-col">
         <div className="relative overflow-hidden mt-10">
           <img
@@ -41,6 +42,8 @@ const faq = () => {
           })}
         </div>
       </section>
+
+      <FooterMolecule />
     </>
   );
 };

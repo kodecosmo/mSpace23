@@ -1,14 +1,13 @@
-export default function Error({ statusCode }) {
-    return (
-        <p>
-            {statusCode
-                ? `An error ${statusCode} occurred on server`
-                : 'An error occurred on client'}
-        </p>
-    )
-}
+export default function ErrorPage() {
 
-Error.getInitialProps = ({ res, err }) => {
-    const statusCode = res ? res.statusCode : err ? err.statusCode : 404
-    return { statusCode }
+    return (
+        <section className="bg-white dark:bg-gray-900 flex h-screen">
+            <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 m-auto">
+                <div className="mx-auto max-w-screen-sm text-center">
+                    <h1 className="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-primary-600 dark:text-primary-500">500</h1>
+                    <p className="mb-4 text-lg font-light text-gray-500 dark:text-gray-400">We are already working to solve the problem. </p>
+                </div>
+            </div>
+        </section>
+    );
 }

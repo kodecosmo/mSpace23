@@ -2,7 +2,7 @@
 
 import Head from 'next/head'
 
-export default function Tags({ title = "StudyMate", description = "Welcome to StudyMate. Your online tutoring site." }) {
+export default function Tags({ title = "Que", description = "Welcome to Que. Your online tutoring site." }) {
 
     return (
         <Head>
@@ -12,6 +12,10 @@ export default function Tags({ title = "StudyMate", description = "Welcome to St
 
             {/* Basic HTML Meta Tags */}
             <title>{title}</title>
+
+            <link rel="icon" href="/favicon.svg" type="image/svg" sizes="32x32"
+            />
+
             <meta name="keywords" content="your, tags" />
             <meta name="description" content={description} />
             <meta name="subject" content="your website's subject" />

@@ -22,7 +22,7 @@ const Teacher = () => {
             onChange={handleChange}
             value={userData["teacher_gender"] || ""}
             name="teacher_gender"
-            className="p-1 px-2 my-2 appearance-none outline-none w-full text-gray-500 border border-gray-200 hover:border-primary focus:border-primary rounded focus:outline-none"
+            className="p-1 px-2 my-2 appearance-none focus:ring-0 outline-none w-full text-gray-500 border border-gray-200 hover:border-primary focus:border-primary rounded focus:outline-none"
             style={{ outline: "none" }}
           >
             <option value="both">Prefer both</option>

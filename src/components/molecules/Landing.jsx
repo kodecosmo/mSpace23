@@ -1,47 +1,28 @@
 import React from "react";
 
+import SubjectIndexAtom from "../atoms/SubjectIndexAtom";
+import Banner from "../atoms/Banner";
+import SubscribeEmailAtom from "../atoms/SubscribeEmailAtom";
+
 const landing = () => {
   return (
     <>
       {/* Subjects - need to do this again */}
-      <section className="max-w-5xl px-5 mx-auto mt-16 md:mt-10 md:mb-24 text-center w-full flex flex-col items-start">
-        <div className="grid grid-cols-6 grid-rows-2 items-stretch max-w-[550px] w-full self-center md:flex md:py-6 md:justify-between md:items-start md:max-w-[100%]">
-          <a href="/topics/mathematics/" className="flex flex-col items-center flex-1 border-r-[#ccc] border-r-[1px] py-2 px-[30px] gap-[2px] mt-5">
-            <img src="https://brilliant.org/site_media/version-1de7ac9e60/images/homepage/topic-math.png" alt="Math" width="132" height="132" loading="lazy" />
-            <h3 className=" text-base md:text-[18px] mb-auto font-semibold text-center "> Maths </h3>
-          </a>
 
-          <a href="/topics/physics/" className="flex flex-col items-center flex-1 border-r-[#ccc] border-r-[1px] py-2 px-[30px] gap-[2px] mt-5">
-            <img src="https://brilliant.org/site_media/version-32dd0ee41c/images/homepage/topic-data-analysis.png" alt="Math" width="132" height="132" loading="lazy" />
-            <h3 className=" text-base md:text-[18px] mb-auto font-semibold text-center "> Physics </h3>
-          </a>
+      <SubjectIndexAtom/>
 
-          <a href="/topics/chemistry/" className="flex flex-col items-center flex-1 border-r-[#ccc] border-r-[1px] py-2 px-[30px] gap-[2px] mt-5">
-            <img src="https://brilliant.org/site_media/version-affbf78367/images/homepage/topic-science-and-enginnering.png" alt="Math" width="132" height="132" loading="lazy" />
-            <h3 className=" text-base md:text-[18px] mb-auto font-semibold text-center "> Chemistry </h3>
-          </a>
 
-          <a href="/topics/biology/" className="flex flex-col items-center flex-1 border-r-[#ccc] border-r-[1px] py-2 px-[30px] gap-[2px] mt-5">
-            <img src="https://brilliant.org/site_media/version-9cddcd3333/images/homepage/topic-programming.png" alt="Math" width="132" height="132" loading="lazy" />
-            <h3 className=" text-base md:text-[18px] mb-auto font-semibold text-center "> Programming </h3>
-          </a>
 
-          <a href="/topics/computer-science/" className="flex flex-col items-center flex-1 border-r-[#ccc] border-r-[1px] py-2 px-[30px] gap-[2px] mt-5">
-            <img src="https://brilliant.org/site_media/version-0a482e698b/images/homepage/topic-computer-science.png" alt="Math" width="132" height="132" loading="lazy" />
-            <h3 className=" text-base md:text-[18px] mb-auto font-semibold text-center "> Computer Science </h3>
-          </a>
-        </div>
-      </section>
 
-      {/* What makes StudyMate special */}
-      <section className="container flex flex-col mx-auto md:mt-10 space-y-12 md:space-y-0 md:flex-row max-w-5xl">
+      {/* What makes Que special */}
+      <section className="font-montserrat container flex flex-col mx-auto md:mt-10 space-y-12 md:space-y-0 md:flex-row max-w-5xl">
         <div className="flex flex-col space-y-12 md:w-1/2 mx-auto">
           <h2 className="max-w-md text-4xl font-bold text-center md:text-left">
             {" "}
-            What makes <span className="text-primary"> StudyMate</span> Special?
+            What makes <span className="text-primary"> Que</span> Special?
           </h2>
           <p className="max-w-sm text-center mx-auto md:mx-0 text-text-color md:text-left">
-            StudyMate is a platform that allows students to ask questions and
+            Que is a platform that allows students to ask questions and
             get answers from teachers. It is a place you can even scedule
             tutorial sessions with a teacher of choice.
           </p>
@@ -66,7 +47,7 @@ const landing = () => {
                 Smart keyword search{" "}
               </h3>
               <p className="text-text-color">
-                StudyMate allows students to search for solutions by either
+                Que allows students to search for solutions by either
                 uploading a question or using our smart search. Text recognition
                 identifies keywords in uploaded questions, yielding relevant
                 search results. If a solution isn't found, users can post the
@@ -93,7 +74,7 @@ const landing = () => {
                 Straightforward solutions to any problem
               </h3>
               <p className="text-text-color">
-                Users can upload any questions they come up with to “StudyMate”
+                Users can upload any questions they come up with to “Que”
                 and get solutions from teachers and experts in that specific
                 field or through AI chatbots.
               </p>
@@ -129,15 +110,15 @@ const landing = () => {
 
       {/* Testimonials */}
       <section>
-        <div className="max-w-6xl px-5 mx-auto mt-32 text-center">
+        <div className="font-montserrat max-w-6xl px-5 mx-auto mt-32 text-center">
           <h2 className="text-4xl font-bold text-center mb-16">
             What others say about{" "}
-            <span className="text-primary"> StudyMate! </span>
+            <span className="text-primary-700"> Que! </span>
           </h2>
 
           <div className="flex flex-col md:flex-row max-w-5xl mx-auto gap-8 group">
-            <div className="bg-primary/10 md:group-hover:blur-sm md:group-hover:hover:blur-none md:group-hover:scale-[0.85] md:transition duration-200 md:ease-in-out md:group-hover:hover:scale-100  cursor-pointer p-8 rounded-xl mix-blend-luminosity">
-              <img src="" alt="Person 01" className="h-20 mx-auto" />
+            <div className="bg-primary-700/10 md:group-hover:blur-sm md:group-hover:hover:blur-none md:group-hover:scale-[0.85] md:transition duration-200 md:ease-in-out md:group-hover:hover:scale-100  cursor-pointer p-8 rounded-xl">
+              <img src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Person 01" className=" h-32 w-32 mx-auto rounded-full" />
               <h4 className="uppercase text-xl font-bold">
                 Kaviru Hapuarachchi
               </h4>
@@ -148,13 +129,13 @@ const landing = () => {
                 meet user experince expected from the app"
               </p>
 
-              <button className="bg-primary py-2.5 px-8 rounded-full hover:text-white hover:bg-text-color transition duration-100">
+              <button className="bg-primary-700 py-2.5 px-8 rounded-full hover:text-white hover:bg-text-color transition duration-100">
                 Get in Touch
               </button>
             </div>
 
-            <div className="bg-primary/10 md:group-hover:blur-sm md:group-hover:hover:blur-none md:group-hover:scale-[0.85] md:transition duration-200 md:ease-in-out md:group-hover:hover:scale-100  cursor-pointer p-8 rounded-xl mix-blend-luminosity">
-              <img src="" alt="Person 02" className="h-20 mx-auto" />
+            <div className="bg-primary-700/10 md:group-hover:blur-sm md:group-hover:hover:blur-none md:group-hover:scale-[0.85] md:transition duration-200 md:ease-in-out md:group-hover:hover:scale-100  cursor-pointer p-8 rounded-xl">
+              <img src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Person 02" className="h-32 w-32 mx-auto rounded-full" />
               <h4 className="uppercase text-xl font-bold">
                 Ridmaka Hapuarachchi
               </h4>
@@ -165,13 +146,13 @@ const landing = () => {
                 meet user experince expected from the app"
               </p>
 
-              <button className="bg-primary py-2.5 px-8 rounded-full hover:text-white hover:bg-text-color transition duration-100">
+              <button className="bg-primary-700 py-2.5 px-8 rounded-full hover:text-white hover:bg-text-color transition duration-100">
                 Get in Touch
               </button>
             </div>
 
-            <div className="bg-primary/10 md:group-hover:blur-sm md:group-hover:hover:blur-none md:group-hover:scale-[0.85] md:transition duration-200 md:ease-in-out md:group-hover:hover:scale-100  cursor-pointer p-8 rounded-xl mix-blend-luminosity">
-              <img src="" alt="Person 03" className="h-20 mx-auto" />
+            <div className="bg-primary-700/10 md:group-hover:blur-sm md:group-hover:hover:blur-none md:group-hover:scale-[0.85] md:transition duration-200 md:ease-in-out md:group-hover:hover:scale-100  cursor-pointer p-8 rounded-xl">
+              <img src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Person 03" className="h-32 w-32 mx-auto rounded-full" />
               <h4 className="uppercase text-xl font-bold">Name GoesHere</h4>
 
               <p className="text-sm leading-7 my-3 font-light">
@@ -180,7 +161,7 @@ const landing = () => {
                 meet user experince expected from the app"
               </p>
 
-              <button className="bg-primary py-2.5 px-8 rounded-full hover:text-white hover:bg-text-color transition duration-100">
+              <button className="bg-primary-700 py-2.5 px-8 rounded-full hover:text-white hover:bg-text-color transition duration-100">
                 Get in Touch
               </button>
             </div>
@@ -189,26 +170,11 @@ const landing = () => {
       </section>
 
       {/* CTA */}
-      <section className="mb-10">
-        <div className="max-w-6xl px-5 mx-auto mt-24 bg-primary rounded-lg flex flex-col md:flex-row justify-between items-center">
-          <div className="py-4 flex flex-col mb-4 justify-center">
-            <h2 className="text-4xl font-bold text-white py-4 text-center md:text-left">
-              Be a part of 
-              <span className="text-text-color"> StudyMate </span> today!
-            </h2>
-
-            <p className="font-light text-lg leading-7 text-center md:text-left">
-              Be a part of this amazing community
-            </p>
-          </div>
-
-          <div className="mb-4 md:mb-0">
-            <button className="bg-white rounded-lg px-8 py-2.5 font-semibold hover:text-white hover:bg-text-color transition duration-100">
-              Get Started
-            </button>
-          </div>
-        </div>
-      </section>
+      <div className=" mt-5">
+      <SubscribeEmailAtom />
+      </div>
+      <Banner/>
+      
     </>
   );
 };
