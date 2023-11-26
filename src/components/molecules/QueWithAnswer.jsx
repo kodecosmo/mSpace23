@@ -248,7 +248,7 @@ const QueWithAnswer = () => {
                   text="Student Name"
                   name="name"
                   id="name"
-                  placeholder="Type product name"
+                  placeholder="Name"
                   required={true}
                 />
 
@@ -257,7 +257,7 @@ const QueWithAnswer = () => {
                   text="Question ID"
                   name="brand"
                   id="brand"
-                  placeholder="Product brand"
+                  placeholder="ID"
                   required={true}
                 />
 
