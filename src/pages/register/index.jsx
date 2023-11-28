@@ -1,24 +1,49 @@
 import { FooterMolecule } from "@/components/molecules/FooterMolecule";
 import NavbarMolecule from "@/components/molecules/NavbarMolecule";
+import { FaChalkboardTeacher, FaChild, FaRegCircle } from "react-icons/fa";
 
 export default function Register() {
-    return (
-        <main>
-            <NavbarMolecule />
-            <section className="max-w-2xl mx-auto pt-[100px]">
-                <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl capitalize py-6  text-center mb-24">
-                    Registration Index
-                </h1>
-                <div className="flex items-center">
-                    <button type="button" className="focus:outline-none text-white bg-orange-400 hover:bg-orange-500 focus:ring-4 focus:ring-orange-300 rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-orange-900 font-semibold">
-                        <a href="/register/student">Student</a>
-                    </button>
-                    <button type="button" className="focus:outline-none text-white bg-orange-400 hover:bg-orange-500 focus:ring-4 focus:ring-orange-300 rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-orange-900 font-semibold">
-                        <a href="/register/teacher">Teacher</a>
-                    </button>
-                </div>
-            </section>
-            <FooterMolecule />
-        </main>
-    );
+  return (
+    <main>
+      <NavbarMolecule />
+
+      <section className="flex justify-center items-center h-screen">
+        <div className="p-6">
+          <h2 className=" text-[f5f5f5] mb-4 text-4xl font-semibold">
+            Please Select who are you
+          </h2>
+          <div className="flex justify-evenly items-center gap-5">
+            <div className="flex items-center justify-center mt-4">
+              <div className="block relative w-full h-auto mb-4 teacher">
+                {/* add onclick function */}
+                <button className="flex border-solid rounded-lg border-[3px] border-text-color border-opacity-50 hover:bg-primary-600 transition-colors ease-in-out duration-200 focus:bg-primary-700 group">
+                  <div className="flex items-center py-3 px-4 rounded-md p-8 gap-5">
+                    <FaChalkboardTeacher className="text-5xl text-text-color group-hover:text-white transition-colors ease-in-out duration-200 group-focus:bg-primary-700 group-focus:text-white" />
+                    <div className="text-xl font-medium text-text-color group-hover:text-white transition-colors ease-in-out duration-200 group-focus:bg-primary-700 group-focus:text-white">
+                      Teacher
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div className="flex items-center justify-center mt-4">
+              <div className="block relative w-full h-auto mb-4 teacher">
+                {/* add onclick function */}
+                <button className="flex border-solid rounded-lg border-[3px] border-text-color border-opacity-50 hover:bg-primary-600 transition-colors ease-in-out duration-200 focus:bg-primary-700 group">
+                  <div className="flex items-center py-3 px-4 rounded-md p-8 gap-5">
+                    <FaChild className="text-5xl text-text-color group-hover:text-white transition-colors ease-in-out duration-200 group-focus:bg-primary-700 group-focus:text-white" />
+                    <div className="text-xl font-medium text-text-color group-hover:text-white transition-colors ease-in-out duration-200 group-focus:bg-primary-700 group-focus:text-white">
+                      Student
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <FooterMolecule />
+    </main>
+  );
 }
