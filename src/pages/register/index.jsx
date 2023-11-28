@@ -1,5 +1,6 @@
 import { FooterMolecule } from "@/components/molecules/FooterMolecule";
 import NavbarMolecule from "@/components/molecules/NavbarMolecule";
+import Link from "next/link";
 import { FaChalkboardTeacher, FaChild, FaRegCircle } from "react-icons/fa";
 
 export default function Register() {
@@ -16,27 +17,31 @@ export default function Register() {
             <div className="flex items-center justify-center mt-4">
               <div className="block relative w-full h-auto mb-4 teacher">
                 {/* add onclick function */}
-                <button className="flex border-solid rounded-lg border-[3px] border-text-color border-opacity-50 hover:bg-primary-600 transition-colors ease-in-out duration-200 focus:bg-primary-700 group">
-                  <div className="flex items-center py-3 px-4 rounded-md p-8 gap-5">
-                    <FaChalkboardTeacher className="text-5xl text-text-color group-hover:text-white transition-colors ease-in-out duration-200 group-focus:bg-primary-700 group-focus:text-white" />
-                    <div className="text-xl font-medium text-text-color group-hover:text-white transition-colors ease-in-out duration-200 group-focus:bg-primary-700 group-focus:text-white">
-                      Teacher
+                <Link href={"/register/teacher"}>
+                  <button className="flex border-solid rounded-lg border-[3px] border-text-color border-opacity-50 hover:bg-primary-600 transition-colors ease-in-out duration-200 focus:bg-primary-700 group">
+                    <div className="flex items-center py-3 px-4 rounded-md p-8 gap-5">
+                      <FaChalkboardTeacher className="text-5xl text-text-color group-hover:text-white transition-colors ease-in-out duration-200 group-focus:bg-primary-700 group-focus:text-white" />
+                      <div className="text-xl font-medium text-text-color group-hover:text-white transition-colors ease-in-out duration-200 group-focus:bg-primary-700 group-focus:text-white">
+                        Teacher
+                      </div>
                     </div>
-                  </div>
-                </button>
+                  </button>
+                </Link>
               </div>
             </div>
             <div className="flex items-center justify-center mt-4">
               <div className="block relative w-full h-auto mb-4 teacher">
                 {/* add onclick function */}
-                <button className="flex border-solid rounded-lg border-[3px] border-text-color border-opacity-50 hover:bg-primary-600 transition-colors ease-in-out duration-200 focus:bg-primary-700 group">
-                  <div className="flex items-center py-3 px-4 rounded-md p-8 gap-5">
-                    <FaChild className="text-5xl text-text-color group-hover:text-white transition-colors ease-in-out duration-200 group-focus:bg-primary-700 group-focus:text-white" />
-                    <div className="text-xl font-medium text-text-color group-hover:text-white transition-colors ease-in-out duration-200 group-focus:bg-primary-700 group-focus:text-white">
-                      Student
+                <Link href={"/register/student"}>
+                  <button className="flex border-solid rounded-lg border-[3px] border-text-color border-opacity-50 hover:bg-primary-600 transition-colors ease-in-out duration-200 focus:bg-primary-700 group">
+                    <div className="flex items-center py-3 px-4 rounded-md p-8 gap-5">
+                      <FaChild className="text-5xl text-text-color group-hover:text-white transition-colors ease-in-out duration-200 group-focus:bg-primary-700 group-focus:text-white" />
+                      <div className="text-xl font-medium text-text-color group-hover:text-white transition-colors ease-in-out duration-200 group-focus:bg-primary-700 group-focus:text-white">
+                        Student
+                      </div>
                     </div>
-                  </div>
-                </button>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
